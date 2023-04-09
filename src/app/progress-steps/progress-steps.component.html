@@ -1,0 +1,23 @@
+<div class="ProgressSteps--container">
+    <h1 class="Title">Progress Steps Task #2</h1>
+    <div class="ProgressSteps--box">
+        <div class="steps--container">
+            <div class="circles" *ngFor="let step of steps">
+                <div class="step" [ngClass]="{'actual': ActualStep >= step}">{{step}}</div>
+                <div class="lines" *ngIf="step < steps.length">
+                    <div class="horizontal" [ngClass]="{'actual--line': ActualStep - 1 >= step}"></div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="prev--cont">
+                <button class="prev" [disabled]="ActualStep <= 1" [ngClass]="{'active': ActualStep > 1}"
+                    (click)="prevStep()">Prev</button>
+            </div>
+            <div class="next--cont">
+                <button class="next" [disabled]="ActualStep >= steps.length"
+                    [ngClass]="{'active': ActualStep < steps.length}" (click)="nextStep()">Next</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,120 @@
+.ProgressSteps--container {
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+
+    h1 {
+        text-align: center;
+    }
+
+    .ProgressSteps--box {
+        width: 100%;
+        height: 100vh;
+        background-color: rgb(31, 31, 31);
+        display: flex;
+        justify-content: center;
+
+        .steps--container {
+            position: absolute;
+            top: 68%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            margin-left: 15px;
+
+            .circles {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .lines {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgb(56, 56, 56);
+
+                .horizontal {
+                    width: 75px;
+                    height: 4px;
+                    background-color: rgb(56, 56, 56);
+                    transition: all .3s ease-out;
+
+                    &.actual--line {
+                        background-color: rgb(63, 169, 240);
+                        transition: all .3s ease-out;
+                    }
+                }
+            }
+
+
+            .step {
+                border: 3px solid rgb(56, 56, 56);
+                border-radius: 100px;
+                color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 25px;
+                height: 25px;
+                transition: all .3s ease-out;
+
+                &.actual {
+                    border: 3px solid rgb(63, 169, 240);
+                    transition: all .3s ease-out;
+                }
+            }
+        }
+
+        .buttons {
+            position: relative;
+            top: 52%;
+            height: 100%;
+            display: flex;
+
+            button {
+                cursor: pointer;
+                color: white;
+                border: none;
+                border-radius: 7px;
+
+
+                &.active {
+                    background-color: rgb(63, 169, 240);
+                    cursor: pointer;
+                }
+
+                &:active {
+                    height: 32px;
+                    width: 89px;
+                }
+            }
+
+            .prev--cont {
+                height: 33px;
+                width: 90px;
+            }
+
+            .next--cont {
+                margin-left: 15px;
+                height: 33px;
+                width: 90px;
+
+            }
+
+            .prev {
+                width: 100%;
+                height: 100%;
+                background-color: rgb(56, 56, 56);
+                cursor: not-allowed;
+            }
+
+            .next {
+                width: 100%;
+                height: 100%;
+                background-color: rgb(56, 56, 56);
+                cursor: not-allowed;
+            }
+        }
+    }
+}

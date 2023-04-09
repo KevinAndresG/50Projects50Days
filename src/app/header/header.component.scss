@@ -1,0 +1,23 @@
+.header--container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header--box {
+        width: 50%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: rgba(219, 219, 219, 0.637);
+        border-radius: 0 0 10px 10px;
+        box-shadow: 2px 2px 5px rgb(153, 153, 153), -2px -2px 5px rgb(153, 153, 153);
+    }
+
+    .Title {
+        color: white;
+        text-shadow: 1px 1px 1px rgb(0, 255, 255), -1px -1px 1px rgb(1, 194, 194), 1px -1px 1px rgb(0, 255, 255), -1px 1px 1px rgb(0, 165, 165);
+    }
+}

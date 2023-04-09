@@ -1,0 +1,35 @@
+.footer--container {
+    position: absolute;
+    bottom: -100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footer--box {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(219, 219, 219, 0.637);
+        box-shadow: 2px 2px 5px rgb(153, 153, 153), -2px -2px 5px rgb(153, 153, 153);
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        .Tasks {
+            text-decoration: none;
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(5, 1fr);
+            grid-gap: 20px 80px;
+
+            a {
+                color: black;
+                font-weight: bold;
+                text-decoration: none;
+            }
+        }
+    }
+}

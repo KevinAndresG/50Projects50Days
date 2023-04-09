@@ -1,0 +1,11 @@
+<div class="ExpandingCards--container">
+    <div class="ExpandingCards--box">
+        <h1 class="Title">Expanding Cards Task #1</h1>
+        <div class="cards--container">
+            <div class="panel" *ngFor="let link of links; let i = index" [ngClass]="{'active': selectedClass === i}"
+                (click)="selectedClass = i" [style.backgroundImage]="'url(' + link + ')'">
+                <h3>{{ titles[i] }}</h3>
+            </div>
+        </div>
+    </div>
+</div>
