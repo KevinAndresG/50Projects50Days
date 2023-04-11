@@ -1,0 +1,11 @@
+<div class="HiddenSearch--container">
+    <h1 class="Title">Hidden Search Task #4</h1>
+    <div class="HiddenSearch--box">
+        <div class="search-container">
+            <input class="searcher" [ngClass]="{'showSearch': showSearch}" type="text" placeholder="Search...">
+            <button class="search-button" (click)="showSearch = !showSearch">
+                <fa-icon class="search-icon" [icon]="faSearch"></fa-icon>
+            </button>
+        </div>
+    </div>
+</div>

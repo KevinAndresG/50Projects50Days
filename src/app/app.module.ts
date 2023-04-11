@@ -8,6 +8,10 @@ import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ExpandingCardsComponent } from './expanding-cards/expanding-cards.component';
 import { ProgressStepsComponent } from './progress-steps/progress-steps.component';
+import { RotatingNavigationComponent } from './rotating-navigation/rotating-navigation.component';
+import { HiddenSearchComponent } from './hidden-search/hidden-search.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { BlurryLoadingComponent } from './blurry-loading/blurry-loading.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +20,15 @@ import { ProgressStepsComponent } from './progress-steps/progress-steps.componen
     HeaderComponent,
     FooterComponent,
     ExpandingCardsComponent,
-    ProgressStepsComponent
+    ProgressStepsComponent,
+    RotatingNavigationComponent,
+    HiddenSearchComponent,
+    BlurryLoadingComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

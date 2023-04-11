@@ -1,0 +1,157 @@
+.RotatingNavigation--container {
+    width: 100%;
+    font-family: 'Muli', sans-serif;
+
+    h1 {
+        text-align: center;
+    }
+
+    .rotate--container {
+        transform-origin: top left;
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        background: white;
+        justify-content: center;
+        position: relative;
+        transition: transform 0.5s linear;
+
+        .side--bar {
+            position: fixed;
+            left: -100px;
+            top: -100px;
+
+            .circle {
+                background-color: #ff7979;
+                height: 200px;
+                width: 200px;
+                border-radius: 50%;
+                position: relative;
+                transition: transform 0.5s linear;
+            }
+
+            .buttons--cont {
+                position: absolute;
+                left: 100px;
+                top: 135px;
+                z-index: 10;
+
+                button {
+                    background: transparent;
+                    border: none;
+                    cursor: pointer;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 26px;
+                    fill: white;
+                }
+
+                #open {
+                    position: relative;
+                }
+
+                #close {
+                    position: relative;
+                    top: 70%;
+                    left: -60%;
+                    transform: rotate(90deg);
+                    transform-origin: top left;
+                }
+
+            }
+        }
+
+        .RotatingNavigation--box {
+            padding-top: 100px;
+            text-align: left;
+            width: 67%;
+
+            h1 {
+                text-align: left;
+                margin: 0;
+            }
+
+            span {
+                font-weight: lighter;
+                color: rgb(104, 104, 104);
+                font-size: smaller;
+                display: inline-block;
+                margin-bottom: 7px;
+            }
+
+            p {
+                line-height: 23px;
+            }
+
+            .dog-img {
+                width: 100%;
+            }
+        }
+
+        &.show-nav {
+            transform: rotate(-20deg);
+        }
+    }
+
+    .rotate--container.show-nav .circle {
+        transform: rotate(-70deg);
+    }
+
+    .rotate--container.show-nav+nav li {
+        transform: translateX(0);
+        transition-delay: 0.3s;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 40px;
+        left: 0;
+        z-index: 100;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 40px;
+        left: 0;
+        z-index: 100;
+    }
+
+    nav ul {
+        list-style-type: none;
+        padding-left: 30px;
+    }
+
+    nav ul li {
+        text-transform: uppercase;
+        color: #fff;
+        margin: 40px 0;
+        transform: translateX(-100%);
+        transition: transform 0.4s ease-in;
+    }
+
+    nav ul li i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    nav ul li+li {
+        margin-left: 15px;
+        transform: translateX(-150%);
+    }
+
+    nav ul li+li+li {
+        margin-left: 30px;
+        transform: translateX(-200%);
+    }
+
+    nav a {
+        color: #fafafa;
+        text-decoration: none;
+        transition: all 0.5s;
+    }
+
+    nav a:hover {
+        color: #FF7979;
+        font-weight: bold;
+    }
+}

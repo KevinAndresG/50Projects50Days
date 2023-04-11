@@ -1,0 +1,61 @@
+.HiddenSearch--container {
+    width: 100%;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .HiddenSearch--box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+
+        .search-container {
+            display: flex;
+            margin-left: 60px;
+
+            .searcher {
+                width: 0px;
+                padding-left: 0px;
+                border: none;
+                height: 42px;
+                background-color: white;
+                font-size: 17px;
+                transition: all 0.25s ease-out;
+
+                &.showSearch {
+                    width: 165px;
+                    padding-left: 15px;
+                    transition: all 0.25s ease-out;
+                }
+            }
+
+            .search-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: white;
+                border: none;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                padding: 22px;
+
+
+                .search-icon {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 22px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+
+    }
+}
