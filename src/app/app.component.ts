@@ -8,6 +8,5 @@ import { Component, OnInit } from '@angular/core';
 export class AppComponent implements OnInit {
   title = '50Projetcs50Days';
   ngOnInit(): void {
-    console.log('hello');
   }
 }

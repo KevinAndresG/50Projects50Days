@@ -1,0 +1,14 @@
+<div class="ScrollAnimation--container">
+    <h1 class="Title">Scroll Animation Task #6</h1>
+    <div class="ScrollAnimation--box">
+        <ul class="cards">
+            <h1 class="Title">Scroll to see the animation</h1>
+            <div class="cards--container">
+                <li class="card" #myDiv *ngFor="let card of cards; let i = index"
+                    [ngClass]="{'onScreen' : i < onScreenCards}">
+                    {{
+                    card }}</li>
+            </div>
+        </ul>
+    </div>
+</div>

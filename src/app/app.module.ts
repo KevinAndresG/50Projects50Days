@@ -12,6 +12,8 @@ import { RotatingNavigationComponent } from './rotating-navigation/rotating-navi
 import { HiddenSearchComponent } from './hidden-search/hidden-search.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BlurryLoadingComponent } from './blurry-loading/blurry-loading.component';
+import { ScrollAnimationComponent } from './scroll-animation/scroll-animation.component';
+import { SplitLandingComponent } from './split-landing/split-landing.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { BlurryLoadingComponent } from './blurry-loading/blurry-loading.componen
     ProgressStepsComponent,
     RotatingNavigationComponent,
     HiddenSearchComponent,
-    BlurryLoadingComponent
+    BlurryLoadingComponent,
+    ScrollAnimationComponent,
+    SplitLandingComponent
   ],
   imports: [
     BrowserModule,

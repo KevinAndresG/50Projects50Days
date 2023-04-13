@@ -1,0 +1,67 @@
+.ScrollAnimation--container {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cards {
+        display: block;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        margin: auto;
+        padding-top: 10px;
+        background-color: #efedd6;
+
+        h1 {
+            margin: 0;
+        }
+
+        .cards--container {
+            overflow: hidden;
+
+            .card {
+                list-style: none;
+                position: relative;
+                width: 400px;
+                height: 200px;
+                margin-top: 20px;
+                border-radius: 10px;
+                box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+                opacity: 1;
+                transform: translateX(-50%);
+                background-color: steelblue;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 45px;
+
+                &.onScreen:nth-child(odd) {
+                    transition: all .5s ease;
+                    right: -50%;
+                }
+
+                &.onScreen:nth-child(even) {
+                    left: 50%;
+                    transition: all .5s ease;
+                }
+            }
+
+            .card:nth-child(odd) {
+                right: -120%;
+                transition: all .5s ease;
+            }
+
+            .card:nth-child(even) {
+                left: -20%;
+                transition: all .5s ease;
+            }
+        }
+
+    }
+}
