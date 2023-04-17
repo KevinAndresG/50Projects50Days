@@ -1,0 +1,32 @@
+<div class="EventKeycodes--container">
+    <h1 class="Title">Event Keycodes Task #11</h1>
+    <div class="EventKeycodes--box" *ngIf="keyPressed, else elseBlock">
+        <div class="each">
+            <p>event.key</p>
+            <div class="key-cont">
+                <h2>{{keyData.key}}</h2>
+            </div>
+        </div>
+        <div class="each">
+            <p>event.keyCode</p>
+            <div class="key-cont">
+                <h2>{{keyData.keyCode}}</h2>
+            </div>
+        </div>
+        <div class="each">
+            <p>event.code</p>
+            <div class="key-cont">
+                <h2>{{keyData.code}}</h2>
+            </div>
+        </div>
+    </div>
+    <ng-template #elseBlock>
+        <div class="press-container">
+            <div class="title-cont">
+                <h2>
+                    Press any key to get the keyCode
+                </h2>
+            </div>
+        </div>
+    </ng-template>
+</div>

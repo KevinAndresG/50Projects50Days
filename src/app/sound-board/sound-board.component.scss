@@ -1,0 +1,44 @@
+.soundBoard--container {
+    background-color: rgb(161, 100, 223);
+    width: 100%;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+    .Title {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+    }
+
+    .soundBoard--box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .each {
+            margin-right: 30px;
+            border-radius: 5px;
+            background-color: rebeccapurple;
+
+            .but {
+                font-weight: normal;
+                font-size: 20px;
+                width: 100%;
+                height: 100%;
+                padding: 27px 50px;
+                color: white;
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+            }
+
+            &:hover {
+                opacity: .9;
+                cursor: pointer;
+            }
+        }
+    }
+}

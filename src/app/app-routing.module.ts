@@ -8,6 +8,10 @@ import { HiddenSearchComponent } from './hidden-search/hidden-search.component';
 import { BlurryLoadingComponent } from './blurry-loading/blurry-loading.component';
 import { ScrollAnimationComponent } from './scroll-animation/scroll-animation.component';
 import { SplitLandingComponent } from './split-landing/split-landing.component';
+import { FormInputWaveComponent } from './form-input-wave/form-input-wave.component';
+import { SoundBoardComponent } from './sound-board/sound-board.component';
+import { DadJokesComponent } from './dad-jokes/dad-jokes.component';
+import { EventKeycodesComponent } from './event-keycodes/event-keycodes.component';
 
 const routes: Routes = [
   {
@@ -19,6 +23,10 @@ const routes: Routes = [
       { path: 'blurry-loading', component: BlurryLoadingComponent },
       { path: 'scroll-animation', component: ScrollAnimationComponent },
       { path: 'split-landing', component: SplitLandingComponent },
+      { path: 'form-wave', component: FormInputWaveComponent },
+      { path: 'sound-board', component: SoundBoardComponent },
+      { path: 'dad-jokes', component: DadJokesComponent },
+      { path: 'event-keycodes', component: EventKeycodesComponent },
     ],
   },
   { path: '**', redirectTo: 'home' },

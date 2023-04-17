@@ -14,6 +14,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BlurryLoadingComponent } from './blurry-loading/blurry-loading.component';
 import { ScrollAnimationComponent } from './scroll-animation/scroll-animation.component';
 import { SplitLandingComponent } from './split-landing/split-landing.component';
+import { FormInputWaveComponent } from './form-input-wave/form-input-wave.component';
+import { SoundBoardComponent } from './sound-board/sound-board.component';
+import { DadJokesComponent } from './dad-jokes/dad-jokes.component';
+import { EventKeycodesComponent } from './event-keycodes/event-keycodes.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { SplitLandingComponent } from './split-landing/split-landing.component';
     HiddenSearchComponent,
     BlurryLoadingComponent,
     ScrollAnimationComponent,
-    SplitLandingComponent
+    SplitLandingComponent,
+    FormInputWaveComponent,
+    SoundBoardComponent,
+    DadJokesComponent,
+    EventKeycodesComponent
   ],
   imports: [
     BrowserModule,
