@@ -1,0 +1,25 @@
+<div class="FaqCollapse--container">
+    <h1 class="Title">Faq Collapse Task #12</h1>
+    <div class="FaqCollapse--box">
+        <h1 class="frequent-title">Frequently Asked Questions</h1>
+        <div class="quest--container" *ngFor="let quest of questionsArray, let i = index"
+            [ngClass]="{'open': card.includes(i)}">
+            <div class="quest--cont" [ngClass]="{'show': card.includes(i)}">
+                <fa-icon class="quest-icon-back" [icon]="faComment"></fa-icon>
+                <fa-icon class="quest-icon" [icon]="faComment"></fa-icon>
+            </div>
+            <div class="title-container">
+                <div class="text">
+                    <h2>{{ quest }}</h2>
+                    <p *ngIf="card.includes(i)">{{ answersArray[i] }}</p>
+                </div>
+                <a class="down-a" href="#" (click)="openCard($event, i)">
+                    <fa-icon *ngIf="!card.includes(i)" class="down-icon" [icon]="faChevronDown"></fa-icon>
+                </a>
+                <a class="down-a" href="#" (click)="closeCard($event, i)">
+                    <fa-icon *ngIf="card.includes(i)" class="close-icon" [icon]="faCircleXmark"></fa-icon>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

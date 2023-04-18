@@ -12,6 +12,7 @@ import { FormInputWaveComponent } from './form-input-wave/form-input-wave.compon
 import { SoundBoardComponent } from './sound-board/sound-board.component';
 import { DadJokesComponent } from './dad-jokes/dad-jokes.component';
 import { EventKeycodesComponent } from './event-keycodes/event-keycodes.component';
+import { FaqCollapseComponent } from './faq-collapse/faq-collapse.component';
 
 const routes: Routes = [
   {
@@ -27,6 +28,7 @@ const routes: Routes = [
       { path: 'sound-board', component: SoundBoardComponent },
       { path: 'dad-jokes', component: DadJokesComponent },
       { path: 'event-keycodes', component: EventKeycodesComponent },
+      { path: 'faq-collapse', component: FaqCollapseComponent },
     ],
   },
   { path: '**', redirectTo: 'home' },

@@ -18,6 +18,7 @@ import { FormInputWaveComponent } from './form-input-wave/form-input-wave.compon
 import { SoundBoardComponent } from './sound-board/sound-board.component';
 import { DadJokesComponent } from './dad-jokes/dad-jokes.component';
 import { EventKeycodesComponent } from './event-keycodes/event-keycodes.component';
+import { FaqCollapseComponent } from './faq-collapse/faq-collapse.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { EventKeycodesComponent } from './event-keycodes/event-keycodes.componen
     FormInputWaveComponent,
     SoundBoardComponent,
     DadJokesComponent,
-    EventKeycodesComponent
+    EventKeycodesComponent,
+    FaqCollapseComponent
   ],
   imports: [
     BrowserModule,
