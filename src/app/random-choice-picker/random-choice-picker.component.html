@@ -1,0 +1,17 @@
+<link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet'>
+<div class="RandomChoicePicker--container">
+    <h1 class="Title">Random Choice Picker #13</h1>
+    <div class="RandomChoicePicker--box">
+        <div class="choice--container">
+            <h2>Enter all of the choices divided by a comma (',').
+                Press enter when you're done</h2>
+            <textarea class="text-choice" [value]="choices" name="" id="" cols="53" rows="4"
+                placeholder="Enter Choices Here..." (keyup)="addChoice($event)"></textarea>
+            <div class="choices">
+                <div class="each" *ngFor="let choice of choices">
+                    {{ choice }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -13,6 +13,7 @@ import { SoundBoardComponent } from './sound-board/sound-board.component';
 import { DadJokesComponent } from './dad-jokes/dad-jokes.component';
 import { EventKeycodesComponent } from './event-keycodes/event-keycodes.component';
 import { FaqCollapseComponent } from './faq-collapse/faq-collapse.component';
+import { RandomChoicePickerComponent } from './random-choice-picker/random-choice-picker.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,7 @@ const routes: Routes = [
       { path: 'dad-jokes', component: DadJokesComponent },
       { path: 'event-keycodes', component: EventKeycodesComponent },
       { path: 'faq-collapse', component: FaqCollapseComponent },
+      { path: 'random-choice-picker', component: RandomChoicePickerComponent },
     ],
   },
   { path: '**', redirectTo: 'home' },
