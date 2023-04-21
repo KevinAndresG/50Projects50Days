@@ -20,6 +20,7 @@ import { DadJokesComponent } from './dad-jokes/dad-jokes.component';
 import { EventKeycodesComponent } from './event-keycodes/event-keycodes.component';
 import { FaqCollapseComponent } from './faq-collapse/faq-collapse.component';
 import { RandomChoicePickerComponent } from './random-choice-picker/random-choice-picker.component';
+import { AnimatedNavigationComponent } from './animated-navigation/animated-navigation.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { RandomChoicePickerComponent } from './random-choice-picker/random-choic
     DadJokesComponent,
     EventKeycodesComponent,
     FaqCollapseComponent,
-    RandomChoicePickerComponent
+    RandomChoicePickerComponent,
+    AnimatedNavigationComponent
   ],
   imports: [
     BrowserModule,

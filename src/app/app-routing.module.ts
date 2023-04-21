@@ -14,6 +14,7 @@ import { DadJokesComponent } from './dad-jokes/dad-jokes.component';
 import { EventKeycodesComponent } from './event-keycodes/event-keycodes.component';
 import { FaqCollapseComponent } from './faq-collapse/faq-collapse.component';
 import { RandomChoicePickerComponent } from './random-choice-picker/random-choice-picker.component';
+import { AnimatedNavigationComponent } from './animated-navigation/animated-navigation.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,7 @@ const routes: Routes = [
       { path: 'event-keycodes', component: EventKeycodesComponent },
       { path: 'faq-collapse', component: FaqCollapseComponent },
       { path: 'random-choice-picker', component: RandomChoicePickerComponent },
+      { path: 'animated-navigation', component: AnimatedNavigationComponent },
     ],
   },
   { path: '**', redirectTo: 'home' },

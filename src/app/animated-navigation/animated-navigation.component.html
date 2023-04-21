@@ -1,0 +1,26 @@
+<div class="AnimatedNavigation--container">
+    <h1 class="Title">Animated Navigation #14</h1>
+    <div class="AnimatedNavigation--box">
+        <div class="nav--container" [ngClass]="{'open-ground': open}">
+            <ul class="nav-list" [ngClass]="{'list-right': open}">
+                <li class="item" [ngClass]="{'rotate-itemRight': open}">Home</li>
+                <li class="item" [ngClass]="{'rotate-itemRight': open}">Works</li>
+                <li class="item" [ngClass]="{'rotate-itemRight': open}">About</li>
+                <li class="item" [ngClass]="{'rotate-itemRight': open}">Contact</li>
+            </ul>
+            <div class="buttons">
+                <!-- <div class="close" [ngClass]="{'to-close': close, 'to-open': open}">
+                    <button (click)="closeNav()">
+                        <fa-icon class="x-mark" [icon]="faXmark"></fa-icon>
+                    </button>
+                </div> -->
+                <div class="open" [ngClass]="{'to-right': open}">
+                    <button class="click-button" (click)="closeNav()">
+                        <div [ngClass]="{'to-right-top': open}" class="line line1"></div>
+                        <div [ngClass]="{'to-right-bottom': open}" class="line line2"></div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
