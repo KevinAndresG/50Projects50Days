@@ -15,6 +15,7 @@ import { EventKeycodesComponent } from './event-keycodes/event-keycodes.componen
 import { FaqCollapseComponent } from './faq-collapse/faq-collapse.component';
 import { RandomChoicePickerComponent } from './random-choice-picker/random-choice-picker.component';
 import { AnimatedNavigationComponent } from './animated-navigation/animated-navigation.component';
+import { IncrementingCounterComponent } from './incrementing-counter/incrementing-counter.component';
 
 const routes: Routes = [
   {
@@ -33,6 +34,7 @@ const routes: Routes = [
       { path: 'faq-collapse', component: FaqCollapseComponent },
       { path: 'random-choice-picker', component: RandomChoicePickerComponent },
       { path: 'animated-navigation', component: AnimatedNavigationComponent },
+      { path: 'incrementing-counter', component: IncrementingCounterComponent },
     ],
   },
   { path: '**', redirectTo: 'home' },

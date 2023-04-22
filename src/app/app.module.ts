@@ -21,6 +21,7 @@ import { EventKeycodesComponent } from './event-keycodes/event-keycodes.componen
 import { FaqCollapseComponent } from './faq-collapse/faq-collapse.component';
 import { RandomChoicePickerComponent } from './random-choice-picker/random-choice-picker.component';
 import { AnimatedNavigationComponent } from './animated-navigation/animated-navigation.component';
+import { IncrementingCounterComponent } from './incrementing-counter/incrementing-counter.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { AnimatedNavigationComponent } from './animated-navigation/animated-navi
     EventKeycodesComponent,
     FaqCollapseComponent,
     RandomChoicePickerComponent,
-    AnimatedNavigationComponent
+    AnimatedNavigationComponent,
+    IncrementingCounterComponent
   ],
   imports: [
     BrowserModule,
