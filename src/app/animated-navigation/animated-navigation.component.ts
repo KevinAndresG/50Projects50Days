@@ -11,7 +11,5 @@ export class AnimatedNavigationComponent {
   open = false;
   closeNav() {
     this.open = !this.open
-    console.log("This is - this.open = ", this.open);
-
   }
 }

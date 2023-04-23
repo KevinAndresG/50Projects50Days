@@ -16,6 +16,7 @@ import { FaqCollapseComponent } from './faq-collapse/faq-collapse.component';
 import { RandomChoicePickerComponent } from './random-choice-picker/random-choice-picker.component';
 import { AnimatedNavigationComponent } from './animated-navigation/animated-navigation.component';
 import { IncrementingCounterComponent } from './incrementing-counter/incrementing-counter.component';
+import { DrinkWaterComponent } from './drink-water/drink-water.component';
 
 const routes: Routes = [
   {
@@ -35,6 +36,7 @@ const routes: Routes = [
       { path: 'random-choice-picker', component: RandomChoicePickerComponent },
       { path: 'animated-navigation', component: AnimatedNavigationComponent },
       { path: 'incrementing-counter', component: IncrementingCounterComponent },
+      { path: 'drink-water', component: DrinkWaterComponent },
     ],
   },
   { path: '**', redirectTo: 'home' },

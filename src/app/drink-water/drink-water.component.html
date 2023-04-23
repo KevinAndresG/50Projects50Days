@@ -1,0 +1,29 @@
+<div class="DrinkWater--container">
+    <div class="top-text">
+        <h1>Drink Water #16</h1>
+        <p>Goal: {{ goal / 1000}} Liters</p>
+    </div>
+    <div class="DrinkWater--box">
+        <div class="goal">
+            <div class="text--container" [ngStyle]="{'top': textHeight + '%'}">
+                <h3 class="remain-text">{{ remained }}L</h3>
+                <p>Remained</p>
+            </div>
+            <div class="ready" [ngStyle]="{'height': readyPorcent + '%'}">
+                <h1 class="remain-text" [ngStyle]="{'margin-top': porcentText + 'px'}">{{ readyPorcent }}%</h1>
+            </div>
+        </div>
+    </div>
+    <div class="glasses">
+        <p class="select-glasses">Select how many glasses of water that you have drank</p>
+        <div class="glasses--container">
+            <div class="glass" [ngClass]="{'complete': glassesComplete >= i}"
+                *ngFor="let vaso of numeroVasos, let i = index">
+                <button class="button" (click)="fillGoal(i)">
+                    <p class="num">{{ glass.value }}</p>
+                    <p class="text">ml</p>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

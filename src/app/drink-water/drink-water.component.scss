@@ -1,0 +1,156 @@
+.DrinkWater--container {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 100%;
+    height: auto;
+    background-color: rgb(55, 153, 233);
+    font-family: 'Roboto', sans-serif;
+    padding-top: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .top-text {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 35px;
+        }
+
+        p {
+            margin: 0;
+            margin-bottom: 35px;
+        }
+    }
+
+    .DrinkWater--box {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+
+        .goal {
+            width: 135px;
+            height: 320px;
+            border: 4px solid #144fc6;
+            background-color: white;
+            border-radius: 0 0 40px 40px;
+            position: relative;
+            display: flex;
+            align-items: end;
+            overflow: hidden;
+
+            .text--container {
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                text-align: center;
+                transition: all .5s ease;
+
+                h3 {
+                    margin: 0;
+                    color: rgb(5, 61, 214);
+                }
+
+                p {
+                    margin: 0;
+                    color: rgb(22, 94, 228);
+                    font-size: 13px;
+                }
+            }
+
+            .ready {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 0%;
+                background-color: rgb(96, 177, 253);
+                transition: all .5s ease;
+
+                h1 {
+                    margin: 0;
+                    text-align: center;
+                    color: rgb(14, 63, 199);
+                    transition: all .5s ease;
+                }
+
+            }
+        }
+
+    }
+
+    .glasses {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .select-glasses {
+            color: white;
+            letter-spacing: 2px;
+        }
+
+        .glasses--container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            width: 300px;
+
+            .glass {
+                width: 45px;
+                height: 90px;
+                border: 4px solid #144fc6;
+                background-color: rgba(255, 255, 255, 0.9);
+                border-radius: 0 0 15px 15px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 5px;
+                overflow: hidden;
+                cursor: pointer;
+                transition: background-color .3s ease;
+
+                .button {
+                    cursor: pointer;
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    background-color: transparent;
+                }
+
+                p {
+                    color: rgb(46, 90, 236);
+                }
+
+                .num {
+                    margin: 0;
+                    font-size: 13px;
+                    text-align: center;
+                }
+
+                .text {
+                    margin: 0;
+                    font-size: 15px;
+                    text-align: center;
+                }
+
+                &.complete {
+                    background-color: rgb(96, 177, 253);
+                    transition: all .2s ease;
+                }
+            }
+        }
+    }
+}
