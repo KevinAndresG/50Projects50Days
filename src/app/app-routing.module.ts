@@ -18,6 +18,7 @@ import { AnimatedNavigationComponent } from './animated-navigation/animated-navi
 import { IncrementingCounterComponent } from './incrementing-counter/incrementing-counter.component';
 import { DrinkWaterComponent } from './drink-water/drink-water.component';
 import { MovieAppComponent } from './movie-app/movie-app.component';
+import { BackgroundSliderComponent } from './background-slider/background-slider.component';
 
 const routes: Routes = [
   {
@@ -39,6 +40,7 @@ const routes: Routes = [
       { path: 'incrementing-counter', component: IncrementingCounterComponent },
       { path: 'drink-water', component: DrinkWaterComponent },
       { path: 'movie-app', component: MovieAppComponent },
+      { path: 'background-slider', component: BackgroundSliderComponent },
     ],
   },
   { path: '**', redirectTo: 'home' },

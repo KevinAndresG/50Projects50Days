@@ -1,1 +1,14 @@
-<p>background-slider works!</p>
+<div class="BackgroundSlider--container">
+    <h1 class="Title">Background Slider #18</h1>
+    <div class="BackgroundSlider--box">
+        <div class="background">
+            <div class="fondo" [ngStyle]="{'background-image': 'url(' + images[position] + ')'}"></div>
+            <div class="border">
+                <button class="l" (click)="changeBack('l')"><fa-icon class="search-icon"
+                        [icon]="faArrowLeft"></fa-icon></button>
+                <button class="r" (click)="changeBack('r')"><fa-icon class="search-icon"
+                        [icon]="faArrowRight"></fa-icon></button>
+            </div>
+        </div>
+    </div>
+</div>

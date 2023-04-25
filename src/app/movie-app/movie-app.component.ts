@@ -20,7 +20,6 @@ export class MovieAppComponent implements OnInit {
     if (val.value !== '') {
       this.movieAppService.getSearchMovies(val.value).then(resp => {
         this.movies = resp.results;
-        console.log("This is - resp.results = ", resp.results);
       })
     }
     else {
