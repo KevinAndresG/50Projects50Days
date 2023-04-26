@@ -25,6 +25,8 @@ import { IncrementingCounterComponent } from './incrementing-counter/incrementin
 import { DrinkWaterComponent } from './drink-water/drink-water.component';
 import { MovieAppComponent } from './movie-app/movie-app.component';
 import { BackgroundSliderComponent } from './background-slider/background-slider.component';
+import { ThemeClockComponent } from './theme-clock/theme-clock.component';
+import { ButtonRippleComponent } from './button-ripple/button-ripple.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,9 @@ import { BackgroundSliderComponent } from './background-slider/background-slider
     IncrementingCounterComponent,
     DrinkWaterComponent,
     MovieAppComponent,
-    BackgroundSliderComponent
+    BackgroundSliderComponent,
+    ThemeClockComponent,
+    ButtonRippleComponent
   ],
   imports: [
     BrowserModule,

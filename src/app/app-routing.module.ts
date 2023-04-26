@@ -19,6 +19,7 @@ import { IncrementingCounterComponent } from './incrementing-counter/incrementin
 import { DrinkWaterComponent } from './drink-water/drink-water.component';
 import { MovieAppComponent } from './movie-app/movie-app.component';
 import { BackgroundSliderComponent } from './background-slider/background-slider.component';
+import { ThemeClockComponent } from './theme-clock/theme-clock.component';
 
 const routes: Routes = [
   {
@@ -41,6 +42,7 @@ const routes: Routes = [
       { path: 'drink-water', component: DrinkWaterComponent },
       { path: 'movie-app', component: MovieAppComponent },
       { path: 'background-slider', component: BackgroundSliderComponent },
+      { path: 'theme-clock', component: ThemeClockComponent },
     ],
   },
   { path: '**', redirectTo: 'home' },
