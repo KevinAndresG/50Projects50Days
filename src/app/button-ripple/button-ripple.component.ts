@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./button-ripple.component.scss']
 })
 export class ButtonRippleComponent {
-
+  expand = false
+  onClick(event: MouseEvent) {
+    this.expand = true
+    setTimeout(() => {
+      this.expand = false
+    }, 500);
+  }
 }

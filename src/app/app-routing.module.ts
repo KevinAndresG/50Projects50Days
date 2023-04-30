@@ -20,6 +20,10 @@ import { DrinkWaterComponent } from './drink-water/drink-water.component';
 import { MovieAppComponent } from './movie-app/movie-app.component';
 import { BackgroundSliderComponent } from './background-slider/background-slider.component';
 import { ThemeClockComponent } from './theme-clock/theme-clock.component';
+import { ButtonRippleComponent } from './button-ripple/button-ripple.component';
+import { DragNDropComponent } from './drag-ndrop/drag-ndrop.component';
+import { DrawingAppComponent } from './drawing-app/drawing-app.component';
+import { KineticLoaderComponent } from './kinetic-loader/kinetic-loader.component';
 
 const routes: Routes = [
   {
@@ -43,6 +47,10 @@ const routes: Routes = [
       { path: 'movie-app', component: MovieAppComponent },
       { path: 'background-slider', component: BackgroundSliderComponent },
       { path: 'theme-clock', component: ThemeClockComponent },
+      { path: 'button-ripple', component: ButtonRippleComponent },
+      { path: 'Drag-N-Drop', component: DragNDropComponent },
+      { path: 'drawing-app', component: DrawingAppComponent },
+      { path: 'kinetic-loader', component: KineticLoaderComponent },
     ],
   },
   { path: '**', redirectTo: 'home' },

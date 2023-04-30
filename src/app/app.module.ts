@@ -27,6 +27,10 @@ import { MovieAppComponent } from './movie-app/movie-app.component';
 import { BackgroundSliderComponent } from './background-slider/background-slider.component';
 import { ThemeClockComponent } from './theme-clock/theme-clock.component';
 import { ButtonRippleComponent } from './button-ripple/button-ripple.component';
+import { DragNDropComponent } from './drag-ndrop/drag-ndrop.component';
+import { DrawingAppComponent } from './drawing-app/drawing-app.component';
+import { FormsModule } from '@angular/forms';
+import { KineticLoaderComponent } from './kinetic-loader/kinetic-loader.component';
 
 @NgModule({
   declarations: [
@@ -53,12 +57,16 @@ import { ButtonRippleComponent } from './button-ripple/button-ripple.component';
     MovieAppComponent,
     BackgroundSliderComponent,
     ThemeClockComponent,
-    ButtonRippleComponent
+    ButtonRippleComponent,
+    DragNDropComponent,
+    DrawingAppComponent,
+    KineticLoaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

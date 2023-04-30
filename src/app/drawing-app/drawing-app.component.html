@@ -1,0 +1,16 @@
+<div class="DrawingApp--container">
+    <h1 class="Title">Drawing App #22</h1>
+    <div class="DrawingApp--box">
+        <main class="canvas--container">
+            <canvas class="canv" width="800" height="690" #canvas></canvas>
+            <div class="buttons--container">
+                <button class="but size" (click)="changeBrushSize('less')">-</button>
+                <input class="show-size size" type="number" [(ngModel)]="brushSize" />
+                <button class="but size" (click)="changeBrushSize('plus')">+</button>
+                <input class="size color" placeholder="hola" type="color" name="" id=""
+                    (change)="changeColor($event)" />
+                <button class="but size clear" (click)="clearCanvas()">X</button>
+            </div>
+        </main>
+    </div>
+</div>

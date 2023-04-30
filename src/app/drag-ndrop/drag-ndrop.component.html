@@ -1,0 +1,11 @@
+<div class="DragNDrop--container">
+    <h1 class="Title">Drag N Drop #21</h1>
+    <div class="DragNDrop--box">
+        <div class="containers-cont">
+            <div *ngFor="let cont of containers; let i = index" class="each" #each
+                [ngClass]="{'hovered': hovered && i === indexHov}">
+                <div draggable="true" #fill *ngIf="i === index" [ngClass]="{'hold': hold, 'fill': fill2}"></div>
+            </div>
+        </div>
+    </div>
+</div>

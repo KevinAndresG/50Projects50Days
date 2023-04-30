@@ -1,1 +1,13 @@
-<p>button-ripple works!</p>
+<div class="ButtonRipple--container">
+    <h1 class="Title">Button Ripple Effect #20</h1>
+    <div class="ButtonRipple--box">
+        <div class="click-button">
+
+            <button (click)="onClick($event)">
+                <div class="point" [ngClass]="{'expand': expand}">
+                </div>
+                CLICK ME
+            </button>
+        </div>
+    </div>
+</div>
