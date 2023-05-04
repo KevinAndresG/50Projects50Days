@@ -1,0 +1,41 @@
+<div class="DoubleVerticalSlider--container">
+    <h1 class="Title">Double Vertical Slider #26</h1>
+    <div class="DoubleVerticalSlider--box">
+        <div class="backgrounds">
+            <div class="left-container" [ngStyle]="{'top': left + '%'}">
+                <div class="color pink">
+                    <h1 class="title">Nature flower</h1>
+                    <p class="descript">all in pink</p>
+                </div>
+                <div class="color blue">
+                    <h1 class="title">Bluuue Sky</h1>
+                    <p class="descript">with it's mountains</p>
+                </div>
+                <div class="color black">
+                    <h1 class="title">Lonely castle</h1>
+                    <p class="descript">in the wilderness</p>
+                </div>
+                <div class="color orange">
+                    <h1 class="title">Flying eagle</h1>
+                    <p class="descript">in the sunset</p>
+                </div>
+            </div>
+            <button class="btns down" (click)="downBack()">▼</button>
+            <button class="btns up" (click)="upBack()">▲</button>
+            <div class="right-container" [ngStyle]="{'top': right + '%'}">
+                <div class="each">
+                    <img [src]="images[0]" alt="">
+                </div>
+                <div class="each">
+                    <img [src]="images[1]" alt="">
+                </div>
+                <div class="each">
+                    <img [src]="images[2]" alt="">
+                </div>
+                <div class="each">
+                    <img [src]="images[3]" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

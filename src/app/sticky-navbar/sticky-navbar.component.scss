@@ -1,0 +1,174 @@
+.StickyNavbar--container {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    background-color: white;
+    position: relative;
+
+    // .Title {
+    //     width: 100%;
+    //     text-align: center;
+    //     margin: 0;
+    //     margin-top: 20px;
+    //     color: black;
+    //     position: absolute;
+    // }
+
+
+    .StickyNavbar--box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .header {
+            z-index: 10;
+            width: 100%;
+            height: 75px;
+            position: sticky;
+            top: 0;
+            display: flex;
+            align-items: center;
+            background-color: rgb(34, 34, 34);
+            transition: all .3s ease;
+
+            .Title {
+                position: relative;
+                left: 10%;
+                color: white;
+                font-size: 22px;
+            }
+
+            ul {
+                position: relative;
+                left: 53%;
+                color: white;
+                display: flex;
+                list-style: none;
+
+                li {
+                    font-weight: 100;
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        padding: 7px 15px;
+                        font-weight: normal;
+                        transition: all 0.3s ease-in-out;
+
+                        &.selected {
+                            color: #c0392b;
+                            font-weight: bold;
+                        }
+
+                        &:hover {
+                            cursor: pointer;
+                            color: #c0392b;
+                            font-weight: bold;
+                            // transition: all 0.3s ease-in-out;
+                        }
+                    }
+                }
+            }
+
+            &.down {
+                height: 55px;
+                background-color: white;
+                transition: all .3s ease;
+
+                .Title {
+                    color: black;
+                }
+
+                ul {
+                    li {
+                        a {
+                            color: black;
+
+                            &.selected {
+                                color: #c0392b;
+                                font-weight: bold;
+                            }
+
+                            &:hover {
+                                cursor: pointer;
+                                color: #c0392b;
+                                font-weight: bold;
+                                // transition: all 0.3s ease-in-out;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .welcome {
+            width: 100%;
+            height: 100vh;
+            position: absolute;
+
+            .img {
+                position: absolute;
+                width: 100%;
+                height: 100vh;
+                object-fit: cover;
+                object-position: bottom;
+            }
+
+            .cover {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #00000085;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .text {
+                    text-align: center;
+                    color: white;
+
+                    h1 {
+                        margin: 0;
+                        font-size: 50px;
+                        font-weight: lighter;
+                        margin-bottom: 30px;
+                    }
+
+                    p {
+                        font-size: 18px;
+                        font-weight: lighter;
+                        letter-spacing: 2px;
+                    }
+                }
+            }
+        }
+
+        .cont-container {
+            background-color: #fff;
+            width: 100%;
+            height: 600px;
+            position: relative;
+            top: 89.5%;
+            display: flex;
+            justify-content: center;
+
+            .cont {
+                width: 80%;
+
+                h1 {}
+
+                p {
+                    font-weight: lighter;
+                    letter-spacing: 2px;
+                    line-height: 30px;
+                    color: rgb(85, 85, 85);
+                }
+            }
+        }
+    }
+}

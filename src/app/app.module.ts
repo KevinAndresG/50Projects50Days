@@ -31,6 +31,9 @@ import { DragNDropComponent } from './drag-ndrop/drag-ndrop.component';
 import { DrawingAppComponent } from './drawing-app/drawing-app.component';
 import { FormsModule } from '@angular/forms';
 import { KineticLoaderComponent } from './kinetic-loader/kinetic-loader.component';
+import { ContentPlaceholderComponent } from './content-placeholder/content-placeholder.component';
+import { StickyNavbarComponent } from './sticky-navbar/sticky-navbar.component';
+import { DoubleVerticalSliderComponent } from './double-vertical-slider/double-vertical-slider.component';
 
 @NgModule({
   declarations: [
@@ -60,7 +63,10 @@ import { KineticLoaderComponent } from './kinetic-loader/kinetic-loader.componen
     ButtonRippleComponent,
     DragNDropComponent,
     DrawingAppComponent,
-    KineticLoaderComponent
+    KineticLoaderComponent,
+    ContentPlaceholderComponent,
+    StickyNavbarComponent,
+    DoubleVerticalSliderComponent
   ],
   imports: [
     BrowserModule,

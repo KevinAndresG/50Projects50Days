@@ -24,6 +24,9 @@ import { ButtonRippleComponent } from './button-ripple/button-ripple.component';
 import { DragNDropComponent } from './drag-ndrop/drag-ndrop.component';
 import { DrawingAppComponent } from './drawing-app/drawing-app.component';
 import { KineticLoaderComponent } from './kinetic-loader/kinetic-loader.component';
+import { ContentPlaceholderComponent } from './content-placeholder/content-placeholder.component';
+import { StickyNavbarComponent } from './sticky-navbar/sticky-navbar.component';
+import { DoubleVerticalSliderComponent } from './double-vertical-slider/double-vertical-slider.component';
 
 const routes: Routes = [
   {
@@ -51,6 +54,9 @@ const routes: Routes = [
       { path: 'Drag-N-Drop', component: DragNDropComponent },
       { path: 'drawing-app', component: DrawingAppComponent },
       { path: 'kinetic-loader', component: KineticLoaderComponent },
+      { path: 'content-placeholder', component: ContentPlaceholderComponent },
+      { path: 'sticky-navbar', component: StickyNavbarComponent },
+      { path: 'double-vertical-slider', component: DoubleVerticalSliderComponent },
     ],
   },
   { path: '**', redirectTo: 'home' },
