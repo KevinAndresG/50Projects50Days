@@ -27,6 +27,8 @@ import { KineticLoaderComponent } from './kinetic-loader/kinetic-loader.componen
 import { ContentPlaceholderComponent } from './content-placeholder/content-placeholder.component';
 import { StickyNavbarComponent } from './sticky-navbar/sticky-navbar.component';
 import { DoubleVerticalSliderComponent } from './double-vertical-slider/double-vertical-slider.component';
+import { ToastNotificationComponent } from './toast-notification/toast-notification.component';
+import { GithubProfilesComponent } from './github-profiles/github-profiles.component';
 
 const routes: Routes = [
   {
@@ -57,6 +59,8 @@ const routes: Routes = [
       { path: 'content-placeholder', component: ContentPlaceholderComponent },
       { path: 'sticky-navbar', component: StickyNavbarComponent },
       { path: 'double-vertical-slider', component: DoubleVerticalSliderComponent },
+      { path: 'toast-notification', component: ToastNotificationComponent },
+      { path: 'github-profiles', component: GithubProfilesComponent },
     ],
   },
   { path: '**', redirectTo: 'home' },

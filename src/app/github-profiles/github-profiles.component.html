@@ -1,0 +1,24 @@
+<div class="GithubProfiles--container">
+    <h1 class="Title">Github Profiles #28</h1>
+    <div class="GithubProfiles--box">
+        <input (change)="getUser($event)" class="searcher" type="text" placeholder="Search a GitHub User">
+        <div class="user-profile" *ngIf="haveUser">
+            <div class="logo">
+                <img class="pict" [src]="pict" alt="">
+            </div>
+            <div class="info">
+                <h1 class="name">{{ name }}</h1>
+                <div class="git-info">
+                    <p class="followers">{{ followers }} followers</p>
+                    <p class="following">{{ following }} following</p>
+                    <p class="repos">{{ repos }} repos</p>
+                </div>
+                <ul>
+                    <li *ngFor="let rep of firstRepos"><a *ngIf="rep" target="_blank" [href]="rep.clone_url">{{ rep.name
+                            }}</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>

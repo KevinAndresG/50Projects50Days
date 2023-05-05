@@ -34,6 +34,8 @@ import { KineticLoaderComponent } from './kinetic-loader/kinetic-loader.componen
 import { ContentPlaceholderComponent } from './content-placeholder/content-placeholder.component';
 import { StickyNavbarComponent } from './sticky-navbar/sticky-navbar.component';
 import { DoubleVerticalSliderComponent } from './double-vertical-slider/double-vertical-slider.component';
+import { ToastNotificationComponent } from './toast-notification/toast-notification.component';
+import { GithubProfilesComponent } from './github-profiles/github-profiles.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +68,9 @@ import { DoubleVerticalSliderComponent } from './double-vertical-slider/double-v
     KineticLoaderComponent,
     ContentPlaceholderComponent,
     StickyNavbarComponent,
-    DoubleVerticalSliderComponent
+    DoubleVerticalSliderComponent,
+    ToastNotificationComponent,
+    GithubProfilesComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,9 @@
+<div class="ToastNotification--container">
+    <h1 class="Title">Toast Notification #27</h1>
+    <div class="ToastNotification--box">
+        <button (click)="showNotification()" class="notification-btn">Show Notification</button>
+        <div class="cards">
+            <div class="text" *ngFor="let card of toShow" [ngStyle]="{'color': card.color}">{{ card.message }}</div>
+        </div>
+    </div>
+</div>
