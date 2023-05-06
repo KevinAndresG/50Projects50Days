@@ -36,6 +36,7 @@ import { StickyNavbarComponent } from './sticky-navbar/sticky-navbar.component';
 import { DoubleVerticalSliderComponent } from './double-vertical-slider/double-vertical-slider.component';
 import { ToastNotificationComponent } from './toast-notification/toast-notification.component';
 import { GithubProfilesComponent } from './github-profiles/github-profiles.component';
+import { DoubleClickHeartComponent } from './double-click-heart/double-click-heart.component';
 
 @NgModule({
   declarations: [
@@ -70,7 +71,8 @@ import { GithubProfilesComponent } from './github-profiles/github-profiles.compo
     StickyNavbarComponent,
     DoubleVerticalSliderComponent,
     ToastNotificationComponent,
-    GithubProfilesComponent
+    GithubProfilesComponent,
+    DoubleClickHeartComponent
   ],
   imports: [
     BrowserModule,
