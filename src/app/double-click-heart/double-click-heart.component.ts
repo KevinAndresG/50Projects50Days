@@ -22,7 +22,6 @@ export class DoubleClickHeartComponent {
       if (timeDiff < 1000) {
         if (this.clicks === 2) {
           this.onMouseClick(event);
-          // this.clicks = 0
           this.lastClickTime = undefined;
         }
         setTimeout(() => {
@@ -33,7 +32,6 @@ export class DoubleClickHeartComponent {
       }
     }
     this.lastClickTime = currentTime.getTime();
-    console.log("This is - this.clicks = ", this.clicks);
   }
   showPopup = false;
   popupPosition = { x: 0, y: 0 };

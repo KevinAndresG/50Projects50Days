@@ -30,6 +30,8 @@ import { DoubleVerticalSliderComponent } from './double-vertical-slider/double-v
 import { ToastNotificationComponent } from './toast-notification/toast-notification.component';
 import { GithubProfilesComponent } from './github-profiles/github-profiles.component';
 import { DoubleClickHeartComponent } from './double-click-heart/double-click-heart.component';
+import { AutoTextEffectComponent } from './auto-text-effect/auto-text-effect.component';
+import { PasswordGeneratorComponent } from './password-generator/password-generator.component';
 
 const routes: Routes = [
   {
@@ -63,6 +65,27 @@ const routes: Routes = [
       { path: 'ToastNotification', component: ToastNotificationComponent },
       { path: 'GithubProfiles', component: GithubProfilesComponent },
       { path: 'DoubleClickHeart', component: DoubleClickHeartComponent },
+      { path: 'AutoTextEffect', component: AutoTextEffectComponent },
+      { path: 'PasswordGenerator', component: PasswordGeneratorComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
+      { path: '', component: HomeComponent },
     ],
   },
   { path: '**', redirectTo: 'home' },

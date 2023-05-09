@@ -1,0 +1,16 @@
+<div class="AutoTextEffect--container">
+    <h1 class="Title">AutoTextEffect #30</h1>
+    <div class="AutoTextEffect--box">
+        <div class="text--container">
+            <div *ngFor="let n of text; let i = index;">
+                <h1 *ngIf="i <= currentIndex">
+                    {{n === ' ' ? '&nbsp;': n}}
+                </h1>
+            </div>
+        </div>
+        <div class="speed-controller">
+            <p>Speed:</p>
+            <input type="number" name="" id="" [(ngModel)]="speed" max="10" min="1" (click)="changeSpeed()">
+        </div>
+    </div>
+</div>

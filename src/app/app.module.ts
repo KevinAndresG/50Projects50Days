@@ -37,6 +37,8 @@ import { DoubleVerticalSliderComponent } from './double-vertical-slider/double-v
 import { ToastNotificationComponent } from './toast-notification/toast-notification.component';
 import { GithubProfilesComponent } from './github-profiles/github-profiles.component';
 import { DoubleClickHeartComponent } from './double-click-heart/double-click-heart.component';
+import { AutoTextEffectComponent } from './auto-text-effect/auto-text-effect.component';
+import { PasswordGeneratorComponent } from './password-generator/password-generator.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +74,9 @@ import { DoubleClickHeartComponent } from './double-click-heart/double-click-hea
     DoubleVerticalSliderComponent,
     ToastNotificationComponent,
     GithubProfilesComponent,
-    DoubleClickHeartComponent
+    DoubleClickHeartComponent,
+    AutoTextEffectComponent,
+    PasswordGeneratorComponent
   ],
   imports: [
     BrowserModule,

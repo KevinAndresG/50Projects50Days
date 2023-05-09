@@ -1,0 +1,67 @@
+.AutoTextEffect--container {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    background-color: rgb(233, 150, 122);
+    position: relative;
+
+    .Title {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-top: 20px;
+        color: black;
+        position: absolute;
+    }
+
+    .AutoTextEffect--box {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .text--container {
+            width: auto;
+            position: relative;
+            display: flex;
+
+            h1 {}
+        }
+
+        .speed-controller {
+            padding: 10px 20px;
+            position: absolute;
+            bottom: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(209, 135, 110);
+
+            p {
+                font-weight: lighter;
+                font-size: 18px;
+                margin: 0;
+            }
+
+            input {
+                width: 40px;
+                height: 30px;
+                margin-left: 5px;
+                background-color: rgb(233, 150, 122);
+                border: none;
+                font-size: 20px;
+                text-align: center;
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+        }
+    }
+}
