@@ -32,6 +32,7 @@ import { GithubProfilesComponent } from './github-profiles/github-profiles.compo
 import { DoubleClickHeartComponent } from './double-click-heart/double-click-heart.component';
 import { AutoTextEffectComponent } from './auto-text-effect/auto-text-effect.component';
 import { PasswordGeneratorComponent } from './password-generator/password-generator.component';
+import { GoodCheapFastComponent } from './good-cheap-fast/good-cheap-fast.component';
 
 const routes: Routes = [
   {
@@ -67,7 +68,7 @@ const routes: Routes = [
       { path: 'DoubleClickHeart', component: DoubleClickHeartComponent },
       { path: 'AutoTextEffect', component: AutoTextEffectComponent },
       { path: 'PasswordGenerator', component: PasswordGeneratorComponent },
-      { path: '', component: HomeComponent },
+      { path: 'GoodCheapFast', component: GoodCheapFastComponent },
       { path: '', component: HomeComponent },
       { path: '', component: HomeComponent },
       { path: '', component: HomeComponent },

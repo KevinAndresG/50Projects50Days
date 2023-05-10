@@ -1,0 +1,25 @@
+<div class="GoodCheapFast--container">
+    <h1 class="Title">Good Cheap Fast #32</h1>
+    <div class="GoodCheapFast--box">
+        <div class="content--container">
+            <h1>How do you want your project to be?</h1>
+            <div class="toggles">
+                <label class="switch">
+                    <input type="checkbox" name="good" [(ngModel)]="toggles[0]" (change)="toggle($event)">
+                    <span class="slider round"></span>
+                    <p>Good</p>
+                </label>
+                <label class="switch">
+                    <input type="checkbox" name="cheap" [(ngModel)]="toggles[1]" (change)="toggle($event)">
+                    <span class="slider round"></span>
+                    <p>Cheap</p>
+                </label>
+                <label class="switch">
+                    <input type="checkbox" name="fast" [(ngModel)]="toggles[2]" (change)="toggle($event)">
+                    <span class="slider round"></span>
+                    <p>Fast</p>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
