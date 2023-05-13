@@ -33,6 +33,9 @@ import { DoubleClickHeartComponent } from './double-click-heart/double-click-hea
 import { AutoTextEffectComponent } from './auto-text-effect/auto-text-effect.component';
 import { PasswordGeneratorComponent } from './password-generator/password-generator.component';
 import { GoodCheapFastComponent } from './good-cheap-fast/good-cheap-fast.component';
+import { NotesAppComponent } from './notes-app/notes-app.component';
+import { AnimatedCountdownComponent } from './animated-countdown/animated-countdown.component';
+import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 
 const routes: Routes = [
   {
@@ -69,9 +72,9 @@ const routes: Routes = [
       { path: 'AutoTextEffect', component: AutoTextEffectComponent },
       { path: 'PasswordGenerator', component: PasswordGeneratorComponent },
       { path: 'GoodCheapFast', component: GoodCheapFastComponent },
-      { path: '', component: HomeComponent },
-      { path: '', component: HomeComponent },
-      { path: '', component: HomeComponent },
+      { path: 'NotesApp', component: NotesAppComponent },
+      { path: 'AnimatedCountdown', component: AnimatedCountdownComponent },
+      { path: 'ImageCarousel', component: ImageCarouselComponent },
       { path: '', component: HomeComponent },
       { path: '', component: HomeComponent },
       { path: '', component: HomeComponent },

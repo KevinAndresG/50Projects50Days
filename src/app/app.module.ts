@@ -40,6 +40,9 @@ import { DoubleClickHeartComponent } from './double-click-heart/double-click-hea
 import { AutoTextEffectComponent } from './auto-text-effect/auto-text-effect.component';
 import { PasswordGeneratorComponent } from './password-generator/password-generator.component';
 import { GoodCheapFastComponent } from './good-cheap-fast/good-cheap-fast.component';
+import { NotesAppComponent } from './notes-app/notes-app.component';
+import { AnimatedCountdownComponent } from './animated-countdown/animated-countdown.component';
+import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +81,10 @@ import { GoodCheapFastComponent } from './good-cheap-fast/good-cheap-fast.compon
     DoubleClickHeartComponent,
     AutoTextEffectComponent,
     PasswordGeneratorComponent,
-    GoodCheapFastComponent
+    GoodCheapFastComponent,
+    NotesAppComponent,
+    AnimatedCountdownComponent,
+    ImageCarouselComponent
   ],
   imports: [
     BrowserModule,

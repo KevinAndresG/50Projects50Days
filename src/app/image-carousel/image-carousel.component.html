@@ -1,0 +1,14 @@
+<div class="ImageCarousel--container">
+    <h1 class="Title">Image Carousel #35</h1>
+    <div class="ImageCarousel--box">
+        <div class="carrrousel-cont">
+            <div class="each" [ngStyle]="{'transform': 'translateX(' + position + 'px)'}" *ngFor="let image of images">
+                <img class="image" [src]="image" alt="">
+            </div>
+        </div>
+        <div class="change-buttons">
+            <button (click)="swipeCarrouselClick('prev')" class="btn prev">Prev</button>
+            <button (click)="swipeCarrouselClick('next')" class="btn next">Next</button>
+        </div>
+    </div>
+</div>

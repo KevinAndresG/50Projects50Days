@@ -1,0 +1,18 @@
+<div class="AnimatedCountdown--container">
+    <h1 class="Title">Animated Countdown #34</h1>
+    <div class="AnimatedCountdown--box">
+        <div class="count-down" *ngIf="counter >= 0; else replay">
+            <div class="counter--container" *ngFor="let num of numbers; let i = index">
+                <h1 class="counter" [ngClass]="{'turn': i <= counter}" *ngIf="num === counter">{{num}}</h1>
+            </div>
+            <p class="ready">GET READY</p>
+        </div>
+        <ng-template #replay>
+            <div class="replay-container">
+                <h1 class="counter">GO!</h1>
+                <button (click)="replayCountDown()" class="replay">Replay <fa-icon class="AnglesRight"
+                        [icon]="faAnglesRight"></fa-icon> </button>
+            </div>
+        </ng-template>
+    </div>
+</div>

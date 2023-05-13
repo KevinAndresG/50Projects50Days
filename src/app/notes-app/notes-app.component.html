@@ -1,0 +1,26 @@
+<div class="NotesApp--container">
+    <h1 class="Title">Notes App #33</h1>
+    <div class="NotesApp--box">
+        <button (click)="addNote()" class="add-note">
+            <h1>+</h1>
+            <p>Add Note</p>
+        </button>
+        <div class="each" *ngFor="let note of notes; let i = index">
+            <div class="header">
+                <button (click)="saveNote()" class="icons-btn">
+                    <fa-icon class="icons save" [icon]="faSave" />
+                </button>
+                <button (click)="disableText(i)" class="icons-btn">
+                    <fa-icon [ngClass]="{'editing': !actual.includes(i)}" class="icons edit" [icon]="faEdit" />
+                </button>
+                <button (click)="deleteNote(i)" class="icons-btn">
+                    <fa-icon class="icons delete" [icon]="faTrashCan" />
+                </button>
+            </div>
+            <div class="content">
+                <textarea [(ngModel)]="note.value" [disabled]="note.disabled" name="" id="text" cols="30"
+                    rows="10"></textarea>
+            </div>
+        </div>
+    </div>
+</div>
