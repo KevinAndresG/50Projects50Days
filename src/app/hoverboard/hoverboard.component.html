@@ -1,0 +1,11 @@
+<div class="Hoverboard--container">
+    <h1 class="Title">Hoverboard #36</h1>
+    <div class="Hoverboard--box">
+        <div class="hover-cont">
+            <div *ngFor="let square of squares; let i = index"
+                [ngStyle]="{'background-color': i === hovered ? bgColor : 'rgb(29, 29, 29)', 'box-shadow': i === hovered ? '0 0 10px 2px ' + bgColor : '', 'transition': i !== hovered ? 'all 1s ease' : ''}"
+                class="each" (mouseenter)="onMouseEnter(i)" (mouseleave)="onMouseLeave()">
+            </div>
+        </div>
+    </div>
+</div>

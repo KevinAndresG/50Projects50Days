@@ -43,6 +43,7 @@ import { GoodCheapFastComponent } from './good-cheap-fast/good-cheap-fast.compon
 import { NotesAppComponent } from './notes-app/notes-app.component';
 import { AnimatedCountdownComponent } from './animated-countdown/animated-countdown.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
+import { HoverboardComponent } from './hoverboard/hoverboard.component';
 
 @NgModule({
   declarations: [
@@ -84,7 +85,8 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
     GoodCheapFastComponent,
     NotesAppComponent,
     AnimatedCountdownComponent,
-    ImageCarouselComponent
+    ImageCarouselComponent,
+    HoverboardComponent
   ],
   imports: [
     BrowserModule,

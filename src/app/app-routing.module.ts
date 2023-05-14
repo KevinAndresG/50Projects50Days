@@ -36,6 +36,7 @@ import { GoodCheapFastComponent } from './good-cheap-fast/good-cheap-fast.compon
 import { NotesAppComponent } from './notes-app/notes-app.component';
 import { AnimatedCountdownComponent } from './animated-countdown/animated-countdown.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
+import { HoverboardComponent } from './hoverboard/hoverboard.component';
 
 const routes: Routes = [
   {
@@ -75,7 +76,7 @@ const routes: Routes = [
       { path: 'NotesApp', component: NotesAppComponent },
       { path: 'AnimatedCountdown', component: AnimatedCountdownComponent },
       { path: 'ImageCarousel', component: ImageCarouselComponent },
-      { path: '', component: HomeComponent },
+      { path: 'Hoverboard', component: HoverboardComponent },
       { path: '', component: HomeComponent },
       { path: '', component: HomeComponent },
       { path: '', component: HomeComponent },
