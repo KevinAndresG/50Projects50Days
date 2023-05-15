@@ -1,0 +1,13 @@
+<div class="Pokedex--container">
+    <h1 class="Title">Pokedex #37</h1>
+    <div class="Pokedex--box">
+        <div *ngFor="let pok of pokemons" class="card" [ngStyle]="{'background-color': pok.primaryColor}">
+            <div class="img-cont" [ngStyle]="{'background-color': 'rgb(255, 255, 255, .8)'}">
+                <img class="image" [src]="pok.image" alt="" [ngStyle]="{'filter': 'drop-shadow(0 0 5px black)'}">
+            </div>
+            <p class="id" [ngStyle]="{'background-color': pok.primaryColor}">{{pok.id}}</p>
+            <h1 class="name">{{pok.name}}</h1>
+            <p class="type">Type: {{pok.type}}</p>
+        </div>
+    </div>
+</div>

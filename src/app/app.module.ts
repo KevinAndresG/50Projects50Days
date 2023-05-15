@@ -44,6 +44,7 @@ import { NotesAppComponent } from './notes-app/notes-app.component';
 import { AnimatedCountdownComponent } from './animated-countdown/animated-countdown.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { HoverboardComponent } from './hoverboard/hoverboard.component';
+import { PokedexComponent } from './pokedex/pokedex.component';
 
 @NgModule({
   declarations: [
@@ -86,7 +87,8 @@ import { HoverboardComponent } from './hoverboard/hoverboard.component';
     NotesAppComponent,
     AnimatedCountdownComponent,
     ImageCarouselComponent,
-    HoverboardComponent
+    HoverboardComponent,
+    PokedexComponent
   ],
   imports: [
     BrowserModule,

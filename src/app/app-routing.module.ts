@@ -37,6 +37,7 @@ import { NotesAppComponent } from './notes-app/notes-app.component';
 import { AnimatedCountdownComponent } from './animated-countdown/animated-countdown.component';
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { HoverboardComponent } from './hoverboard/hoverboard.component';
+import { PokedexComponent } from './pokedex/pokedex.component';
 
 const routes: Routes = [
   {
@@ -77,7 +78,7 @@ const routes: Routes = [
       { path: 'AnimatedCountdown', component: AnimatedCountdownComponent },
       { path: 'ImageCarousel', component: ImageCarouselComponent },
       { path: 'Hoverboard', component: HoverboardComponent },
-      { path: '', component: HomeComponent },
+      { path: 'Pokedex', component: PokedexComponent },
       { path: '', component: HomeComponent },
       { path: '', component: HomeComponent },
       { path: '', component: HomeComponent },
