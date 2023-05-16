@@ -38,6 +38,7 @@ import { AnimatedCountdownComponent } from './animated-countdown/animated-countd
 import { ImageCarouselComponent } from './image-carousel/image-carousel.component';
 import { HoverboardComponent } from './hoverboard/hoverboard.component';
 import { PokedexComponent } from './pokedex/pokedex.component';
+import { MobileTabNavigationComponent } from './mobile-tab-navigation/mobile-tab-navigation.component';
 
 const routes: Routes = [
   {
@@ -79,7 +80,7 @@ const routes: Routes = [
       { path: 'ImageCarousel', component: ImageCarouselComponent },
       { path: 'Hoverboard', component: HoverboardComponent },
       { path: 'Pokedex', component: PokedexComponent },
-      { path: '', component: HomeComponent },
+      { path: 'MobileTabNavigation', component: MobileTabNavigationComponent },
       { path: '', component: HomeComponent },
       { path: '', component: HomeComponent },
       { path: '', component: HomeComponent },

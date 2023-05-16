@@ -47,8 +47,10 @@ export class PokedexComponent implements OnInit {
           pokemon.id = '#' + res.id;
         }
         pokemon.name = res.name;
-        pokemon.image = res.sprites.front_default;
+        pokemon.image = res.sprites.versions['generation-v']['black-white'].animated.front_default;
         pokemon.type = res.types[0].type.name;
+        // console.log('version: ', res.sprites.versions['generation-v']['black-white'].animated.front_default);
+
         switch (res.types[0].type.name) {
           case 'grass':
             pokemon.primaryColor = this.primaryColors.grass

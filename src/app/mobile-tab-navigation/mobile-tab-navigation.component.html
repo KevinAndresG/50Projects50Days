@@ -1,0 +1,18 @@
+<div class="MobileTabNavigation--container">
+    <h1 class="Title">Mobile Tab Navigation #38</h1>
+    <div class="MobileTabNavigation--box">
+        <div class="screen">
+            <div *ngFor="let screen of screens;let n = index" class="images-cont"
+                [ngStyle]="{'opacity': n === active ? '1' : '0'}">
+                <img class="img" [src]="screen" alt="">
+            </div>
+            <div class="nav">
+                <button *ngFor="let but of buttons; let i = index" class="but" [ngClass]="{'active': i === active}"
+                    (click)="navBar(i)">
+                    <fa-icon class="icon" [icon]="but.icon" />
+                    <p>{{but.title}}</p>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

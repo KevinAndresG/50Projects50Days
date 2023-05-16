@@ -48,9 +48,9 @@
                 border-radius: 100%;
                 margin-bottom: 20px;
 
-                // .image {
-                //     filter: drop-shadow(0 5px 1px red) drop-shadow(0 -5px 1px red);
-                // }
+                .image {
+                    image-rendering: pixelated;
+                }
             }
 
             .id {
