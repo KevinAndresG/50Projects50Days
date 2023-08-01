@@ -46,6 +46,9 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
 import { HoverboardComponent } from './hoverboard/hoverboard.component';
 import { PokedexComponent } from './pokedex/pokedex.component';
 import { MobileTabNavigationComponent } from './mobile-tab-navigation/mobile-tab-navigation.component';
+import { PasswordBackgroundComponent } from './password-background/password-background.component';
+import { VerifyAccountUiComponent } from './verify-account-ui/verify-account-ui.component';
+import { LiveUserFilterComponent } from './live-user-filter/live-user-filter.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +93,10 @@ import { MobileTabNavigationComponent } from './mobile-tab-navigation/mobile-tab
     ImageCarouselComponent,
     HoverboardComponent,
     PokedexComponent,
-    MobileTabNavigationComponent
+    MobileTabNavigationComponent,
+    PasswordBackgroundComponent,
+    VerifyAccountUiComponent,
+    LiveUserFilterComponent
   ],
   imports: [
     BrowserModule,

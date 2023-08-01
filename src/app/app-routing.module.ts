@@ -39,6 +39,9 @@ import { ImageCarouselComponent } from './image-carousel/image-carousel.componen
 import { HoverboardComponent } from './hoverboard/hoverboard.component';
 import { PokedexComponent } from './pokedex/pokedex.component';
 import { MobileTabNavigationComponent } from './mobile-tab-navigation/mobile-tab-navigation.component';
+import { PasswordBackgroundComponent } from './password-background/password-background.component';
+import { VerifyAccountUiComponent } from './verify-account-ui/verify-account-ui.component';
+import { LiveUserFilterComponent } from './live-user-filter/live-user-filter.component';
 
 const routes: Routes = [
   {
@@ -81,10 +84,10 @@ const routes: Routes = [
       { path: 'Hoverboard', component: HoverboardComponent },
       { path: 'Pokedex', component: PokedexComponent },
       { path: 'MobileTabNavigation', component: MobileTabNavigationComponent },
+      { path: 'PasswordBackground', component: PasswordBackgroundComponent },
       { path: '', component: HomeComponent },
-      { path: '', component: HomeComponent },
-      { path: '', component: HomeComponent },
-      { path: '', component: HomeComponent },
+      { path: 'VerifyAccountUi', component: VerifyAccountUiComponent },
+      { path: 'LiveUserFilter', component: LiveUserFilterComponent },
       { path: '', component: HomeComponent },
       { path: '', component: HomeComponent },
       { path: '', component: HomeComponent },

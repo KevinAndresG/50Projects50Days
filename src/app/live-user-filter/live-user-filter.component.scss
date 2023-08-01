@@ -1,0 +1,121 @@
+.LiveUserFilter--container {
+    width: 100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    background: rgb(248, 249, 253);
+    position: relative;
+    padding-bottom: 200px;
+
+    .Title {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        margin-top: 20px;
+        color: black;
+        position: absolute;
+    }
+
+    .LiveUserFilter--box {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        top: 90px;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+
+        .content {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.507);
+            height: 545px;
+            width: 300px;
+            overflow: hidden;
+            border-radius: 5px;
+
+            .top-data {
+                background-color: rgb(62, 87, 219);
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 20px;
+                width: 100%;
+                box-sizing: border-box;
+
+                h3 {
+                    align-self: flex-start;
+                    margin: 0;
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                }
+
+                p {
+                    color: rgb(216, 221, 248);
+                    align-self: flex-start;
+                    margin: 0;
+                    font-weight: normal;
+                    margin-bottom: 20px;
+                    font-size: 13px;
+                }
+
+                input {
+                    background-color: rgb(43, 61, 153);
+                    border: none;
+                    color: white;
+                    width: 100%;
+                    height: 40px;
+                    padding-left: 15px;
+                    border-radius: 20px;
+                    box-sizing: border-box;
+                    font-size: 15px;
+
+                    &::placeholder {
+                        color: rgb(117, 117, 117);
+                    }
+
+                    &:focus-visible {
+                        outline: 1px dashed white;
+                    }
+                }
+            }
+
+            .bott-data {
+                background-color: #fff;
+                height: 67%;
+                width: 100%;
+                overflow: auto;
+                padding-top: 20px;
+
+                .each-card {
+                    display: flex;
+                    margin-bottom: 20px;
+                    border-bottom: 1px solid rgb(238, 238, 238);
+                    padding-bottom: 23px;
+
+                    img {
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 100%;
+                        margin-left: 20px;
+                        margin-right: 15px;
+                    }
+
+                    .name {
+                        font-size: 15px;
+                        margin: 0;
+                        margin-bottom: 13px;
+                    }
+
+                    .location {
+                        font-size: 13px;
+                        font-weight: normal;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}

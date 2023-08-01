@@ -1,0 +1,20 @@
+<div class="VerifyAccountUi--container">
+    <h1 class="Title">Verify Account Ui #38</h1>
+    <div class="VerifyAccountUi--box">
+        <div class="square">
+            <div class="text">
+                <h1>Verify Your Account</h1>
+                <p>We emailed you the six digit code to cool_guy@email.com
+                    Enter the code below to confirm your email address.</p>
+            </div>
+            <div class="inputs">
+                <input *ngFor="let letter of password, let i = index" #campos type="text" placeholder="0"
+                    (input)="onInputChange($event)" (click)="onClick(i)">
+            </div>
+            <div class="post-data">
+                <p>This is design only. We didn't actually send you an email as we
+                    don't have your email, right?</p>
+            </div>
+        </div>
+    </div>
+</div>

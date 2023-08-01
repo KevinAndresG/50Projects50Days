@@ -1,0 +1,21 @@
+<div class="LiveUserFilter--container">
+    <h1 class="Title">Live User Filter #42</h1>
+    <div class="LiveUserFilter--box">
+        <div class="content">
+            <div class="top-data">
+                <h3>Live User Filter</h3>
+                <p>Search by name and/or location</p>
+                <input type="text" placeholder="Search" (input)="filter($event)">
+            </div>
+            <div class="bott-data">
+                <div *ngFor="let user of filtering ? filtered : users" class="each-card">
+                    <img [src]="user.picture.large" alt="">
+                    <div class="data">
+                        <h2 class="name">{{user.name.first + " " + user.name.last}}</h2>
+                        <p class="location">{{user.location.city + ', ' + user.location.country}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

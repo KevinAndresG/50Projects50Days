@@ -7,7 +7,9 @@ import { PokedexService } from '../services/pokedex.service';
   styleUrls: ['./pokedex.component.scss']
 })
 export class PokedexComponent implements OnInit {
-  pokemonsAmount = 150
+  pokemonsAmount = 150;
+  goUp = false;
+  index = -1;
   color = 'turquoise'
   primaryColors = {
     grass: 'rgb(152, 215, 165)',
@@ -30,14 +32,14 @@ export class PokedexComponent implements OnInit {
   }
   ids: string[] = []
   names: string[] = []
-  pokemons: { id: string, name: string, image: string, type: string, primaryColor: string, secondaryColor: string }[] = []
+  pokemons: { id: string, name: string, sprite: string, anim: string, type: string, primaryColor: string, secondaryColor: string }[] = []
   constructor(private pokedexService: PokedexService) { }
   ngOnInit(): void {
     this.getPokemons()
   }
   async getPokemons() {
     for (let i = 1; i <= this.pokemonsAmount; i++) {
-      let pokemon = { id: '', name: '', image: '', type: '', primaryColor: '', secondaryColor: '' }
+      let pokemon = { id: '', name: '', sprite: '', anim: '', type: '', primaryColor: '', secondaryColor: '' }
       await this.pokedexService.getPokemons(i).then(res => {
         if (res.id < 10) {
           pokemon.id = '#00' + res.id;
@@ -47,7 +49,8 @@ export class PokedexComponent implements OnInit {
           pokemon.id = '#' + res.id;
         }
         pokemon.name = res.name;
-        pokemon.image = res.sprites.versions['generation-v']['black-white'].animated.front_default;
+        pokemon.sprite = res.sprites.front_default;
+        pokemon.anim = res.sprites.versions['generation-v']['black-white'].animated.front_default;
         pokemon.type = res.types[0].type.name;
         // console.log('version: ', res.sprites.versions['generation-v']['black-white'].animated.front_default);
 
@@ -107,6 +110,15 @@ export class PokedexComponent implements OnInit {
       })
 
     }
-    console.log('ids: ', this.pokemons);
+  }
+  pokeEnter(i: number) {
+    this.index = i;
+    this.goUp = true
+    console.log("This is - i = ", i);
+  }
+  pokeLeave() {
+    this.index = -1;
+    this.goUp = false
+    console.log("This is - this.index = ", this.index);
   }
 }

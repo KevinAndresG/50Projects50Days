@@ -30,49 +30,77 @@
 
         .card {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border-radius: 10px;
-            height: 280px;
+            height: 300px;
             width: 180px;
-            padding-top: 10px;
             box-sizing: border-box;
+            justify-content: center;
+            position: relative;
 
-            .img-cont {
-                width: 120px;
-                height: 120px;
+            .back {
+                border-radius: 10px;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transition: all .5s ease;
                 display: flex;
-                justify-content: center;
+                flex-direction: column;
                 align-items: center;
-                border-radius: 100%;
-                margin-bottom: 20px;
+                box-sizing: border-box;
 
-                .image {
-                    image-rendering: pixelated;
+                .img-cont {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 100%;
+                    margin-top: 40px;
+                    transition: all .5s ease;
+                    margin-bottom: 20px;
+                }
+
+                &.rot-cont {
+                    transform: rotateX(80deg);
+                    transition: all .3s ease;
+                }
+
+                .id {
+                    margin: 0;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    font-weight: lighter;
+                    font-size: 14px;
+                    mix-blend-mode: multiply;
+                }
+
+                .name {
+                    margin: 0;
+                    font-size: 20px;
+                    margin-top: 10px;
+                }
+
+                .type {
+                    margin: 0;
+                    font-weight: normal;
+                    margin-top: 10px;
+                    font-size: 15px;
                 }
             }
 
-            .id {
-                margin: 0;
-                padding: 5px 10px;
-                border-radius: 10px;
-                font-weight: lighter;
-                font-size: 14px;
-                mix-blend-mode: multiply;
-            }
+            .image {
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                image-rendering: pixelated;
+                z-index: 10;
+                transition: all .3s ease;
+                margin-top: 30%;
+                display: flex;
+                justify-content: center;
 
-            .name {
-                margin: 0;
-                font-size: 20px;
-                margin-top: 10px;
-            }
-
-            .type {
-                margin: 0;
-                font-weight: normal;
-                margin-top: 10px;
-                font-size: 15px;
+                &.anim {
+                    display: flex;
+                    justify-content: center;
+                    transform: scale(2) translateY(-30px);
+                    transition: all .5s ease;
+                }
             }
         }
     }
