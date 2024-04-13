@@ -1,23 +1,8 @@
 <div class="ContentPlaceholder--container">
     <h1 class="Title">Content Placeholder #24</h1>
     <div class="ContentPlaceholder--box">
-        <div class="card" *ngIf="!loading; else elseBlock">
-            <img class="top-image" width="350" height="205"
-                src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80"
-                alt="">
-            <div class="text">
-                <h1 class="title">Lorem ipsum dolor sit amet</h1>
-                <p class="descript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore perferendis</p>
-                <div class="personal">
-                    <img class="foto" src="https://randomuser.me/api/portraits/men/45.jpg" alt="">
-                    <div class="data-info">
-                        <h4 class="name">John Doe</h4>
-                        <div class="date">Oct 08, 2020</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <ng-template #elseBlock>
+        <app-card [loading]="loading"></app-card>
+        <div *ngIf="loading">
             <div class="card-content" *ngIf="loading">
                 <div class="top-image">
                     <div class="top-image-anim"></div>
@@ -50,6 +35,6 @@
                     </div>
                 </div>
             </div>
-        </ng-template>
+        </div>
     </div>
 </div>

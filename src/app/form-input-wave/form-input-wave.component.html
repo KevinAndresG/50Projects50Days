@@ -4,24 +4,9 @@
         <div class="form--container">
             <h1>Please Login</h1>
             <form action="">
-                <div class="text email-text">
-                    <p [ngClass]="{'move': moveE, 'reversa': reversaE}">E</p>
-                    <p [ngClass]="{'move': moveE, 'reversa': reversaE}">m</p>
-                    <p [ngClass]="{'move': moveE, 'reversa': reversaE}">a</p>
-                    <p [ngClass]="{'move': moveE, 'reversa': reversaE}">i</p>
-                    <p [ngClass]="{'move': moveE, 'reversa': reversaE}">l</p>
-                </div>
+                <app-input-controller [text]="'Email'" [moveUp]="moveE" [reversaDown]="reversaE"></app-input-controller>
                 <input required class="inputs email-input" type="text" (focus)="moveEmail()" (blur)="notMoveEmail()">
-                <div class="text password-text">
-                    <p [ngClass]="{'move': moveP, 'reversa': reversaP}">P</p>
-                    <p [ngClass]="{'move': moveP, 'reversa': reversaP}">a</p>
-                    <p [ngClass]="{'move': moveP, 'reversa': reversaP}">s</p>
-                    <p [ngClass]="{'move': moveP, 'reversa': reversaP}">s</p>
-                    <p [ngClass]="{'move': moveP, 'reversa': reversaP}">w</p>
-                    <p [ngClass]="{'move': moveP, 'reversa': reversaP}">o</p>
-                    <p [ngClass]="{'move': moveP, 'reversa': reversaP}">r</p>
-                    <p [ngClass]="{'move': moveP, 'reversa': reversaP}">d</p>
-                </div>
+                <app-input-controller [text]="'Password'" [moveUp]="moveP" [reversaDown]="reversaP"></app-input-controller>
                 <input required class="inputs password-input" type="text" (focus)="movePass()" (blur)="notMovePass()">
                 <button class="login-button">Login</button>
             </form>

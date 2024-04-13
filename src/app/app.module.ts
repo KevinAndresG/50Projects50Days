@@ -49,6 +49,9 @@ import { MobileTabNavigationComponent } from './mobile-tab-navigation/mobile-tab
 import { PasswordBackgroundComponent } from './password-background/password-background.component';
 import { VerifyAccountUiComponent } from './verify-account-ui/verify-account-ui.component';
 import { LiveUserFilterComponent } from './live-user-filter/live-user-filter.component';
+import { CardComponent } from './content-placeholder/card/card.component';
+import { InputControllerComponent } from './form-input-wave/input-controller/input-controller.component';
+import { ButtonComponent } from './theme-clock/button/button.component';
 
 @NgModule({
   declarations: [
@@ -96,7 +99,10 @@ import { LiveUserFilterComponent } from './live-user-filter/live-user-filter.com
     MobileTabNavigationComponent,
     PasswordBackgroundComponent,
     VerifyAccountUiComponent,
-    LiveUserFilterComponent
+    LiveUserFilterComponent,
+    CardComponent,
+    InputControllerComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

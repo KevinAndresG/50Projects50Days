@@ -1,353 +1,196 @@
 .form-wave--container {
-    background-color: steelblue;
+  background-color: steelblue;
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+
+  .Title {
     width: 100%;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    text-align: center;
+  }
 
-    .Title {
-        width: 100%;
-        text-align: center;
-    }
+  .form-wave--box {
+    padding-top: 83px;
+    display: flex;
+    justify-content: center;
 
-    .form-wave--box {
-        padding-top: 83px;
-        display: flex;
-        justify-content: center;
-
-        .form--container {
-            background-color: rgba(0, 0, 0, 0.4);
-            color: white;
-            border-radius: 5px;
-            height: 390px;
-            width: 295px;
-            padding: 20px 40px;
-
-            .inputs {
-                color: white;
-                font-size: 18px;
-                margin-top: 8px;
-                width: 100%;
-                height: 40px;
-                background-color: transparent;
-                border: none;
-                border-bottom: 2px solid white;
-
-                &:focus-visible {
-                    outline: none;
-                }
-            }
-
-            .email-input {
-                margin-bottom: 40px;
-            }
-
-            .password-input {
-                margin-bottom: 40px;
-            }
-
-            h1 {
-                text-align: center;
-                margin: 0;
-                margin-top: 25px;
-                margin-bottom: 30px;
-            }
-
-            .text {
-                position: absolute;
-                font-weight: normal;
-                display: flex;
-            }
-
-            .email-text {
-                margin-bottom: 10px;
-            }
-
-            .email-text p:nth-child(1) {
-
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.15s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.15s;
-                }
-            }
-
-            .email-text p:nth-child(2) {
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.2s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.2s;
-                }
-            }
-
-            .email-text p:nth-child(3) {
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.25s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.25s;
-                }
-            }
-
-            .email-text p:nth-child(4) {
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.3s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.3s;
-                }
-            }
-
-            .email-text p:nth-child(5) {
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.35s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.35s;
-                }
-            }
-
-            .password-text p {
-                font-size: 18px;
-            }
-
-            .password-text p:nth-child(1) {
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.15s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.15s;
-                }
-            }
-
-            .password-text p:nth-child(2) {
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.2s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.2s;
-                }
-            }
-
-            .password-text p:nth-child(3) {
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.25s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.25s;
-                }
-            }
-
-            .password-text p:nth-child(4) {
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.3s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.3s;
-                }
-            }
-
-            .password-text p:nth-child(5) {
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.35s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.35s;
-                }
-            }
-
-            .password-text p:nth-child(6) {
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.4s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.4s;
-                }
-            }
-
-            .password-text p:nth-child(7) {
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.45s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.45s;
-                }
-            }
-
-            .password-text p:nth-child(8) {
-                &.move {
-                    animation-name: animar-letra;
-                    animation-duration: .3s;
-                    animation-timing-function: ease;
-                    animation-fill-mode: forwards;
-                    animation-delay: 0.5s;
-                }
-
-                &.reversa {
-                    animation-name: desanimar-letra;
-                    animation-duration: .5s;
-                    animation-timing-function: ease;
-                    animation-delay: 0.35s;
-                }
-            }
-
-            .login-button {
-                font-size: 14px;
-                width: 100%;
-                background: lightblue;
-                border-radius: 5px;
-                cursor: pointer;
-                border: none;
-                padding: 17px 0 17px 0;
-            }
-
-            .form-info {
-                font-weight: normal;
-                font-size: 15px;
-                letter-spacing: 1px;
-                margin-top: 32px;
-
-                .form-register {
-                    text-decoration: none;
-                    color: lightblue;
-                    margin-left: -3px;
-                }
-            }
+    .form--container {
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+      border-radius: 5px;
+      height: 390px;
+      width: 295px;
+      padding: 20px 40px;
+      form::ng-deep {
+        .text {
+          position: absolute;
+          font-weight: normal;
+          display: flex;
         }
+
+        .email-text {
+          margin-bottom: 10px;
+        }
+
+        .password-text p {
+          font-size: 18px;
+        }
+        .password-text p:nth-child(5) {
+          &.move {
+            animation-name: animar-letra;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.35s;
+          }
+
+          &.reversa {
+            font-size: 18px;
+            animation-name: desanimar-letra;
+            animation-fill-mode: forwards;
+            animation-duration: 0.3s;
+            animation-delay: 0.35s;
+          }
+        }
+
+        .password-text p:nth-child(6) {
+          &.move {
+            animation-name: animar-letra;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.4s;
+          }
+
+          &.reversa {
+            font-size: 18px;
+            animation-name: desanimar-letra;
+            animation-fill-mode: forwards;
+            animation-duration: 0.3s;
+            animation-delay: 0.4s;
+          }
+        }
+
+        .password-text p:nth-child(7) {
+          &.move {
+            animation-name: animar-letra;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.45s;
+          }
+
+          &.reversa {
+            font-size: 18px;
+            animation-name: desanimar-letra;
+            animation-fill-mode: forwards;
+            animation-duration: 0.3s;
+            animation-delay: 0.45s;
+          }
+        }
+
+        .password-text p:nth-child(8) {
+          &.move {
+            animation-name: animar-letra;
+            animation-duration: 0.3s;
+            animation-fill-mode: forwards;
+            animation-delay: 0.5s;
+          }
+
+          &.reversa {
+            font-size: 18px;
+            animation-name: desanimar-letra;
+            animation-fill-mode: forwards;
+            animation-duration: 0.5s;
+            animation-delay: 0.35s;
+          }
+        }
+      }
+      .inputs {
+        color: white;
+        font-size: 18px;
+        margin-top: 8px;
+        width: 100%;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        border-bottom: 2px solid white;
+
+        &:focus-visible {
+          outline: none;
+        }
+      }
+
+      .email-input {
+        margin-bottom: 40px;
+      }
+
+      .password-input {
+        margin-bottom: 40px;
+      }
+
+      h1 {
+        text-align: center;
+        margin: 0;
+        margin-top: 25px;
+        margin-bottom: 30px;
+      }
+
+      .login-button {
+        font-size: 14px;
+        width: 100%;
+        background: lightblue;
+        border-radius: 5px;
+        cursor: pointer;
+        border: none;
+        padding: 17px 0 17px 0;
+      }
+
+      .form-info {
+        font-weight: normal;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-top: 32px;
+
+        .form-register {
+          text-decoration: none;
+          color: lightblue;
+          margin-left: -3px;
+        }
+      }
     }
+  }
 }
 
 @keyframes animar-letra {
-    0% {
-        font-size: 18px;
-        transform: translateY(0);
-    }
+  0% {
+    font-size: 18px;
+    transform: translateY(0);
+  }
 
-    50% {
-        font-size: 18px;
-        transform: translateY(10px);
-    }
+  50% {
+    font-size: 18px;
+    transform: translateY(10px);
+  }
 
-    100% {
-        font-size: 18px;
-        color: lightblue;
-        transform: translateY(-31px);
-    }
+  100% {
+    font-size: 18px;
+    color: lightblue;
+    transform: translateY(-31px);
+  }
 }
 
 @keyframes desanimar-letra {
-    0% {
-        transform: translateY(-31px);
-        font-size: 18px;
-        color: lightblue;
-    }
+  0% {
+    font-size: 18px;
+    transform: translateY(-31px);
+  }
 
-    50% {
-        transform: translateY(-35px);
-        font-size: 18px;
-    }
+  50% {
+    transform: translateY(10px);
+    font-size: 18px;
+  }
 
-    100% {
-        transform: translateY(0px);
-        font-size: 18px;
-        color: white;
-    }
+  100% {
+    transform: translateY(0px);
+    font-size: 18px;
+  }
 }

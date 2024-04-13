@@ -1,0 +1,193 @@
+.email-text p,
+.password-text p {
+  &.reversa {
+    transform: translateY(-31px);
+  }
+}
+.email-text p:nth-child(1) {
+  &.move {
+    animation-name: animar-letra;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.15s;
+  }
+
+  &.reversa {
+    font-size: 18px;
+    animation-name: desanimar-letra;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-delay: 0.15s;
+  }
+}
+
+.email-text p:nth-child(2) {
+  &.move {
+    animation-name: animar-letra;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+  }
+
+  &.reversa {
+    font-size: 18px;
+    animation-name: desanimar-letra;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-delay: 0.2s;
+  }
+}
+
+.email-text p:nth-child(3) {
+  &.move {
+    animation-name: animar-letra;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.25s;
+  }
+
+  &.reversa {
+    font-size: 18px;
+    animation-name: desanimar-letra;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-delay: 0.25s;
+  }
+}
+
+.email-text p:nth-child(4) {
+  &.move {
+    animation-name: animar-letra;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+  }
+
+  &.reversa {
+    font-size: 18px;
+    animation-name: desanimar-letra;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+  }
+}
+
+.email-text p:nth-child(5) {
+  &.move {
+    animation-name: animar-letra;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.35s;
+  }
+
+  &.reversa {
+    font-size: 18px;
+    animation-name: desanimar-letra;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-delay: 0.35s;
+  }
+}
+
+.password-text p:nth-child(1) {
+  &.move {
+    animation-name: animar-letra;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.15s;
+  }
+
+  &.reversa {
+    font-size: 18px;
+    animation-name: desanimar-letra;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-delay: 0.15s;
+  }
+}
+
+.password-text p:nth-child(2) {
+  &.move {
+    animation-name: animar-letra;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+  }
+
+  &.reversa {
+    font-size: 18px;
+    animation-name: desanimar-letra;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-delay: 0.2s;
+  }
+}
+
+.password-text p:nth-child(3) {
+  &.move {
+    animation-name: animar-letra;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.25s;
+  }
+
+  &.reversa {
+    font-size: 18px;
+    animation-name: desanimar-letra;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-delay: 0.25s;
+  }
+}
+
+.password-text p:nth-child(4) {
+  &.move {
+    animation-name: animar-letra;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.3s;
+  }
+
+  &.reversa {
+    font-size: 18px;
+    animation-name: desanimar-letra;
+    animation-fill-mode: forwards;
+    animation-duration: 0.3s;
+    animation-delay: 0.3s;
+  }
+}
+
+@keyframes animar-letra {
+  0% {
+    font-size: 18px;
+    transform: translateY(0);
+  }
+
+  50% {
+    font-size: 18px;
+    transform: translateY(10px);
+  }
+
+  100% {
+    font-size: 18px;
+    color: lightblue;
+    transform: translateY(-31px);
+  }
+}
+
+@keyframes desanimar-letra {
+  0% {
+    font-size: 18px;
+    transform: translateY(-31px);
+  }
+
+  50% {
+    transform: translateY(10px);
+    font-size: 18px;
+  }
+
+  100% {
+    transform: translateY(0px);
+    font-size: 18px;
+  }
+}

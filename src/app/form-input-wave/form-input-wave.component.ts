@@ -13,13 +13,13 @@ export class FormInputWaveComponent {
     this.moveE = true
     this.reversaE = false
   }
-  movePass() {
-    this.moveP = true
-    this.reversaP = false
-  }
   notMoveEmail() {
     this.moveE = false
     this.reversaE = true
+  }
+  movePass() {
+    this.moveP = true
+    this.reversaP = false
   }
   notMovePass() {
     this.reversaP = true

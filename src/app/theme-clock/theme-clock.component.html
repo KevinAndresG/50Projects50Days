@@ -1,18 +1,17 @@
-<div class="ThemeClock--container" [ngClass]="{'dark': dark, 'light': light}">
-    <h1 class="Title" [ngClass]="{'dark': !dark, 'light': !light}">Theme Clock #19</h1>
+<div class="ThemeClock--container" [ngClass]="{'dark': dark, 'light': !dark}">
+    <h1 class="Title" [ngClass]="{'dark': !dark, 'light': dark}">Theme Clock #19</h1>
     <div class="ThemeClock--box">
-        <div class="buttons">
-            <button class="dark" *ngIf="light" (click)="changeTheme()">Dark Mode</button>
-            <button class="light" *ngIf="dark" (click)="changeTheme()">Light Mode</button>
-        </div>
+        <app-button [text]="!dark ? 'Light Mode' : 'Dark Mode'" [mode]="dark ? 'light' : 'dark'" (darkTheme)="changeTheme($event)"></app-button>
+        <!-- <button class="dark" *ngIf="light" (click)="changeTheme()">Dark Mode</button> -->
+        <!-- <button class="light" *ngIf="dark" (click)="changeTheme()">Light Mode</button> -->
         <div class="clock">
             <div class="visualClock">
                 <div class="lines">
-                    <div class="center" [ngClass]="{'dark': !dark, 'light': !light}">
+                    <div class="center" [ngClass]="{'dark': !dark, 'light': dark}">
                     </div>
-                    <div class="h" [ngClass]="{'dark': !dark, 'light': !light}"
+                    <div class="h" [ngClass]="{'dark': !dark, 'light': dark}"
                         [ngStyle]="{'transform': 'translateY(' + -50 + '%) rotateZ(' + hourGrades + 'deg)'}"></div>
-                    <div class="m" [ngClass]="{'dark': !dark, 'light': !light}"
+                    <div class="m" [ngClass]="{'dark': !dark, 'light': dark}"
                         [ngStyle]="{'transform': 'translateY(' + -50 + '%) rotateZ(' + minuteGrades + 'deg)'}"></div>
                     <div class="s"
                         [ngStyle]="{'transform': 'translateY(' + -50 + '%) rotateZ(' + secondGrades + 'deg)'}">
@@ -20,7 +19,7 @@
                 </div>
             </div>
             <div class="dateClock">
-                <div class="time" [ngClass]="{'dark': !dark, 'light': !light}">
+                <div class="time" [ngClass]="{'dark': !dark, 'light': dark}">
                     <div class="hour">{{ hour }}:</div>
                     <div class="minute">{{ minute }}</div>
                     <div class="amPm">{{ amPm }}</div>
@@ -28,7 +27,7 @@
                 <div class="date">
                     <div class="day">{{ day }},</div>
                     <div class="month">{{ month }}</div>
-                    <div class="dayN" [ngClass]="{'dark': dark, 'light': light}">{{ dayNumber }}</div>
+                    <div class="dayN" [ngClass]="{'dark': dark, 'light': !dark}">{{ dayNumber }}</div>
                 </div>
             </div>
         </div>
