@@ -1,99 +1,102 @@
 .split-landing--container {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+
+  .Title {
     width: 100%;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    position: absolute;
+  }
 
-    .Title {
-        width: 100%;
-        text-align: center;
-        color: white;
-        z-index: 2;
-        position: absolute;
-    }
+  .split-landing--box {
+    width: 100%;
+    display: flex;
 
-    .split-landing--box {
+    .both-sides {
+      width: 50%;
+      height: 100vh;
+
+      .content-container {
+        position: relative;
         width: 100%;
+        height: 100%;
         display: flex;
-
-        .both-sides {
-            width: 50%;
-            height: 100vh;
-
-            .content-container {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                // top: 21%;
-                padding-top: 150px;
-                color: white;
-                ;
-
-                .title {
-                    text-align: center;
-                    width: 110%;
-                    font-size: 55px;
-                    margin-bottom: 28px;
-                    transition: all 1s ease-in-out;
-                }
-
-                .buy-button {
-                    font-weight: bold;
-                    color: white;
-                    border: 3px solid white;
-                    background-color: transparent;
-                    padding: 25px 85px;
-                }
-            }
-
-            .l-container {
-                background-color: rgba(87, 84, 236, 0.7);
-            }
-
-            .r-container {
-                background-color: rgba(43, 43, 43, 0.8);
-            }
+        flex-direction: column;
+        align-items: center;
+        // top: 21%;
+        padding-top: 150px;
+        color: white;
+        .title {
+          text-align: center;
+          width: 110%;
+          font-size: 55px;
+          margin-bottom: 28px;
+          transition: all 1s ease-in-out;
         }
 
-        .left-side {
-            background-image: url('./ps.jpg');
-            overflow: hidden;
-            background-position: top left;
-            background-size: cover;
-            transition: all 1.2s ease;
-
-            &:hover {
-                width: 150%;
-                transition: all 1s ease-in-out;
-
-                .content-container {
-                    .title {
-                        font-size: 60px;
-                        transition: all 1s ease-in-out;
-                    }
-                }
-            }
+        .buy-button {
+          font-weight: bold;
+          color: white;
+          border: 3px solid white;
+          background-color: transparent;
+          padding: 25px 85px;
+          transition: all 0.2s ease;
+          &:hover {
+            cursor: pointer;
+            box-shadow: inset 0 0 10px grey;
+            transition: all 0.2s ease;
+          }
         }
+      }
 
-        .right-side {
-            background-image: url('./xbox.jpg');
-            overflow: hidden;
-            transition: all 1.2s ease;
+      .l-container {
+        background-color: rgba(87, 84, 236, 0.7);
+      }
 
-
-            &:hover {
-                width: 150%;
-                transition: all 1s ease-in-out;
-
-                .content-container {
-                    .title {
-                        font-size: 60px;
-                        transition: all 1s ease-in-out;
-                    }
-                }
-            }
-        }
+      .r-container {
+        background-color: rgba(43, 43, 43, 0.8);
+      }
     }
+
+    .left-side {
+      background-image: url("./ps.jpg");
+      overflow: hidden;
+      background-position: top left;
+      background-size: cover;
+      transition: all 1.2s ease;
+
+      &:hover {
+        width: 150%;
+        transition: all 1s ease-in-out;
+
+        .content-container {
+          .title {
+            font-size: 60px;
+            transition: all 1s ease-in-out;
+          }
+        }
+      }
+    }
+
+    .right-side {
+      background-image: url("./xbox.jpg");
+      overflow: hidden;
+      transition: all 1.2s ease;
+
+      &:hover {
+        width: 150%;
+        transition: all 1s ease-in-out;
+
+        .content-container {
+          .title {
+            font-size: 60px;
+            transition: all 1s ease-in-out;
+          }
+        }
+      }
+    }
+  }
 }

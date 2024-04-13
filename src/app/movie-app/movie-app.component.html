@@ -6,14 +6,14 @@
     <div class="MovieApp--box">
         <div class="movies--container">
             <div class="each" *ngFor="let movie of movies">
-                <img class="movie-image" [src]="'https://image.tmdb.org/t/p/w1280' + movie.backdrop_path"
+                <img *ngIf="movie.backdrop_path" class="movie-image" [src]="'https://image.tmdb.org/t/p/w1280' + movie.backdrop_path"
                     alt="No Se Encontro La Imagen">
                 <div class="movie-intro">
                     <h1 class="movie-title">{{ movie.original_title }}</h1>
                     <div class="calification">{{ movie.vote_average }}</div>
                 </div>
                 <div class="overview">
-                    <h1 class="overview-title">Overview</h1>
+                    <h1 class="overview-title">{{movie.overview ? "Overview" : "Without Overview"}}</h1>
                     <p class="overview-text">{{ movie.overview }}</p>
                 </div>
             </div>
