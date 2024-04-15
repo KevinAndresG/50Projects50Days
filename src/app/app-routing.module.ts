@@ -45,7 +45,7 @@ import { LiveUserFilterComponent } from './live-user-filter/live-user-filter.com
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '/',
     component: HomeComponent,
     children: [
       { path: 'ExpandingCards', component: ExpandingCardsComponent },
@@ -103,8 +103,8 @@ const routes: Routes = [
       { path: '', component: HomeComponent },
     ],
   },
-  { path: '/', redirectTo: 'home' },
-  { path: '**', redirectTo: 'home' },
+  { path: '/', redirectTo: '/' },
+  { path: '**', redirectTo: '/' },
 ];
 
 @NgModule({
