@@ -45,7 +45,9 @@ import { LiveUserFilterComponent } from './live-user-filter/live-user-filter.com
 
 const routes: Routes = [
   {
-    path: 'home', component: HomeComponent, children: [
+    path: 'home',
+    component: HomeComponent,
+    children: [
       { path: 'ExpandingCards', component: ExpandingCardsComponent },
       { path: 'ProgressSteps', component: ProgressStepsComponent },
       { path: 'RotatingNavigation', component: RotatingNavigationComponent },
@@ -71,7 +73,10 @@ const routes: Routes = [
       { path: 'KineticLoader', component: KineticLoaderComponent },
       { path: 'contentplaceholder', component: ContentPlaceholderComponent },
       { path: 'StickyNavbar', component: StickyNavbarComponent },
-      { path: 'DoubleVerticalSlider', component: DoubleVerticalSliderComponent },
+      {
+        path: 'DoubleVerticalSlider',
+        component: DoubleVerticalSliderComponent,
+      },
       { path: 'ToastNotification', component: ToastNotificationComponent },
       { path: 'GithubProfiles', component: GithubProfilesComponent },
       { path: 'DoubleClickHeart', component: DoubleClickHeartComponent },
@@ -98,11 +103,12 @@ const routes: Routes = [
       { path: '', component: HomeComponent },
     ],
   },
+  { path: '/', redirectTo: 'home' },
   { path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
