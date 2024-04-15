@@ -45,7 +45,7 @@ import { LiveUserFilterComponent } from './live-user-filter/live-user-filter.com
 
 const routes: Routes = [
   {
-    path: '/',
+    path: 'home',
     component: HomeComponent,
     children: [
       { path: 'ExpandingCards', component: ExpandingCardsComponent },
@@ -90,7 +90,7 @@ const routes: Routes = [
       { path: 'Pokedex', component: PokedexComponent },
       { path: 'MobileTabNavigation', component: MobileTabNavigationComponent },
       { path: 'PasswordBackground', component: PasswordBackgroundComponent },
-      { path: 'Unknown', component: HomeComponent },
+      { path: '', component: HomeComponent },
       { path: 'VerifyAccountUi', component: VerifyAccountUiComponent },
       { path: 'LiveUserFilter', component: LiveUserFilterComponent },
       { path: '', component: HomeComponent },
@@ -103,8 +103,7 @@ const routes: Routes = [
       { path: '', component: HomeComponent },
     ],
   },
-  { path: '/', redirectTo: '/' },
-  { path: '**', redirectTo: '/' },
+  { path: '**', redirectTo: 'home' },
 ];
 
 @NgModule({
