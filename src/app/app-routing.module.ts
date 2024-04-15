@@ -90,7 +90,7 @@ const routes: Routes = [
       { path: 'Pokedex', component: PokedexComponent },
       { path: 'MobileTabNavigation', component: MobileTabNavigationComponent },
       { path: 'PasswordBackground', component: PasswordBackgroundComponent },
-      { path: '', component: HomeComponent },
+      { path: 'Unknown', component: HomeComponent },
       { path: 'VerifyAccountUi', component: VerifyAccountUiComponent },
       { path: 'LiveUserFilter', component: LiveUserFilterComponent },
       { path: '', component: HomeComponent },
