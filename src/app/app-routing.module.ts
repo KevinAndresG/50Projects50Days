@@ -43,6 +43,9 @@ import { PasswordBackgroundComponent } from './password-background/password-back
 import { VerifyAccountUiComponent } from './verify-account-ui/verify-account-ui.component';
 import { LiveUserFilterComponent } from './live-user-filter/live-user-filter.component';
 
+import { Router, NavigationEnd } from '@angular/router';
+import { filter } from 'rxjs/operators';
+
 const routes: Routes = [
   {
     path: 'home',
@@ -110,4 +113,12 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+  constructor(private router: Router) {
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        window.scrollTo(0, 0); // Scroll al inicio de la página
+      });
+  }
+}

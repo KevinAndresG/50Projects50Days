@@ -4,10 +4,10 @@
         <div class="form--container">
             <h1>Please Login</h1>
             <form action="">
-                <app-input-controller [text]="'Email'" [moveUp]="moveE" [reversaDown]="reversaE"></app-input-controller>
-                <input required class="inputs email-input" type="text" (focus)="moveEmail()" (blur)="notMoveEmail()">
-                <app-input-controller [text]="'Password'" [moveUp]="moveP" [reversaDown]="reversaP"></app-input-controller>
-                <input required class="inputs password-input" type="text" (focus)="movePass()" (blur)="notMovePass()">
+                <app-input-controller [text]="'Email'" [moveUp]="moveE || form.email.length > 0" [reversaDown]="(reversaE && !form.email) ? true: false"></app-input-controller>
+                <input required class="inputs email-input" type="text" (focus)="moveEmail()" (blur)="notMoveEmail()" [(ngModel)]="form.email" name="email">
+                <app-input-controller [text]="'Password'" [moveUp]="moveP || form.password.length > 0" [reversaDown]="(reversaP && !form.password) ? true: false"></app-input-controller>
+                <input required class="inputs password-input" type="password" (focus)="movePass()" (blur)="notMovePass()" [(ngModel)]="form.password" name="password">
                 <button class="login-button">Login</button>
             </form>
             <p class="form-info">Don't have an account? <a class="form-register" href="">Register</a></p>

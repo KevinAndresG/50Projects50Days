@@ -62,8 +62,6 @@ export class ThemeClockComponent implements OnInit {
   }
 
   changeTheme(theme: boolean) {
-    console.log('This Is  theme:', theme);
     this.dark = theme;
-    console.log('!Padre');
   }
 }

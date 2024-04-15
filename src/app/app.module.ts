@@ -102,15 +102,10 @@ import { ButtonComponent } from './theme-clock/button/button.component';
     LiveUserFilterComponent,
     CardComponent,
     InputControllerComponent,
-    ButtonComponent
+    ButtonComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FontAwesomeModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FontAwesomeModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
