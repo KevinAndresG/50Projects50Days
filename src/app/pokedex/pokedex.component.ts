@@ -65,10 +65,7 @@ export class PokedexComponent implements OnInit {
         }
         pokemon.name = res.name;
         pokemon.sprite = res.sprites.front_default;
-        pokemon.anim =
-          res.sprites.versions['generation-v'][
-            'black-white'
-          ].animated.front_default;
+        pokemon.anim = res.sprites.other.showdown.front_default;
         pokemon.type = res.types[0].type.name;
 
         switch (res.types[0].type.name) {
